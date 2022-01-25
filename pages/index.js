@@ -15,7 +15,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <nav className={styles.navbarfixedtop , styles.container}>
+            <nav className={(styles.navbarfixedtop, styles.container)}>
                 <div className={styles.nav}>
                     {/* <h3 className={styles.nav}>女子的日常</h3> */}
                     <Link href="/" replace>
@@ -68,19 +68,37 @@ export default function Home() {
                             />
                         </a>
                     </Link>
+                    <Link classNam={styles.nsicon} href="/" replace>
+                        <a>
+                            <Image
+                                src="/images/line.png"
+                                alt="line Logo"
+                                width={36}
+                                height={36}
+                            />
+                        </a>
+                    </Link>
                 </div>
             </nav>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Welcome to{" "}
-                    <a href="https://nextjs.org">Good Daily Nails!</a>
-                </h1>
-
-                {/* <p className={styles.description}>
-                    Get started by editing{" "}
-                    <code className={styles.code}>pages/index.js</code>
-                </p> */}
+                <div className={styles.flex}>
+                    <h1 className={styles.mainbox,styles.maintitle}>
+                        Good Daily Nails
+                        <p style={{fontSize:'23px'}}>Nail Design</p>
+                        <p style={{fontSize:'23px'}}>お客さまと共に課題に向き合い、<br />効果的なデザインをご提案いたします。</p>
+                        
+                    </h1>
+                    <div>
+                        <Image
+                            src="/images/DSC_9610.jpg"
+                            alt="Good Day Nails"
+                            max-width={100}
+                            width={540}
+                            height={540}
+                        />
+                    </div>
+                </div>
 
                 <div className={styles.grid}>
                     {/* <a href="https://nextjs.org/docs" className={styles.card}>
