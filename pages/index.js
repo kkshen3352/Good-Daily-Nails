@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
+const workProject = ["美甲", "保養", "腳底"];
+
 export default function Home() {
     return (
         <div className={styles.container}>
@@ -19,7 +21,7 @@ export default function Home() {
                 <div className={styles.nav}>
                     {/* <h3 className={styles.nav}>女子的日常</h3> */}
                     <Link href="/" replace>
-                        <a className={styles.nav}>女子的日常</a>
+                        <a className={styles.nav}>女子の日常</a>
                     </Link>
                     <div className={styles.navbox}></div>
                     <div className={styles.navp}>
@@ -82,12 +84,16 @@ export default function Home() {
             </nav>
 
             <main className={styles.main}>
+                {/* 主 */}
                 <div className={styles.flex}>
-                    <h1 className={styles.mainbox,styles.maintitle}>
+                    <h1 className={(styles.mainbox, styles.maintitle)}>
                         Good Daily Nails
-                        <p style={{fontSize:'23px'}}>Nail Design</p>
-                        <p style={{fontSize:'23px'}}>お客さまと共に課題に向き合い、<br />効果的なデザインをご提案いたします。</p>
-                        
+                        <p style={{ fontSize: "23px" }}>Girl Nail Design</p>
+                        <p style={{ fontSize: "23px" }}>
+                            お客さまと共に課題に向き合い、
+                            <br />
+                            効果的なデザインをご提案いたします。
+                        </p>
                     </h1>
                     <div>
                         <Image
@@ -99,6 +105,66 @@ export default function Home() {
                         />
                     </div>
                 </div>
+
+                {/* 關於我 */}
+                <div
+                    className={styles.flex}
+                    style={{ margin: "3rem auto 2rem", padding: "3rem" }}
+                >
+                    <div>
+                        <Image
+                            src="/images/DSC_3087.jpg"
+                            alt="Girl"
+                            max-width={100}
+                            width={440}
+                            height={440}
+                            objectFit="cover"
+                        />
+                    </div>
+                    <div
+                        style={{
+                            margin: "3rem",
+                            padding: "3rem",
+                            backgroundColor: "#E8E8D0",
+                        }}
+                    >
+                        <h1 style={{ width: "350px", textAlign: "left" }}>
+                            About
+                        </h1>
+                        <p>私について</p>
+                        <p>
+                            ...............................................................................................
+                        </p>
+                        <p>
+                            ...............................................................................................
+                        </p>
+                        <p>
+                            ...............................................................................................
+                        </p>
+                        <div
+                            style={{
+                                textAlign: "right",
+                                marginRight: "1.2rem",
+                            }}
+                        >
+                            <Link href="/" replace>
+                                <a>view more</a>
+                            </Link>
+                        </div>
+                        <div
+                            style={{ textAlign: "right", marginTop: "-0.5rem" }}
+                        >
+                            <Image
+                                src="/images/arrow.png"
+                                alt="arrow"
+                                max-width={100}
+                                width={100}
+                                height={5}
+                            />
+                        </div>
+                    </div>
+                </div>
+                
 
                 <div className={styles.grid}>
                     {/* <a href="https://nextjs.org/docs" className={styles.card}>
@@ -140,6 +206,67 @@ export default function Home() {
                     </a> */}
                 </div>
             </main>
+
+            {/* 工作 */}
+            <section className={styles.back}>
+            <h1 style={{textAlign:'center',margin:'2rem',padding:'2rem'}}>Work</h1>
+                <div
+                    style={{
+                        width: "960px",
+                        height:"560px",
+                        margin: "0 auto",
+                        padding: "0",
+                    }}
+                    // 更改背景框度
+                >
+                    
+                    <div className={styles.Home_card___LpL1}>
+                        <Image
+                            className={styles.Home_card___LpL1Image}
+                            src="/images/DSC_9610.jpg"
+                            alt=""
+                            width={360}
+                            height={223}
+                        />
+                        <div className={styles.info}>
+                            <div style={{ marginTop: "60px" }}>
+                                <p>Hello World!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.Home_card___LpL1}>
+                        <Image
+                            src="/images/DSC_9610.jpg"
+                            alt=""
+                            width={360}
+                            height={223}
+                        />
+                        <div className={styles.info}>
+                            <div style={{ marginTop: "60px" }}>
+                                <p>Hello World!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={(styles.flex, styles.Home_card___LpL1)}>
+                        <Image
+                            src="/images/DSC_9610.jpg"
+                            alt=""
+                            width={360}
+                            height={223}
+                        />
+                        <div className={styles.info}>
+                            <div style={{ marginTop: "60px" }}>
+                                <p>Hello World!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p style={{ textAlign: "center", margin: "0 auto" }}>
+                    view more
+                </p>
+            </section>
 
             <footer className={styles.footer}>
                 <a
