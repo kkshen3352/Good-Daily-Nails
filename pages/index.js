@@ -6,8 +6,7 @@ import Link from "next/link";
 import Nav from "../pages/index/nav";
 import Main from "../pages/index/main";
 import Aection from "../pages/index/aection";
-
-const workProject = ["美甲", "保養", "腳底"];
+import Foot from "../pages/index/foot"
 
 export default function Home() {
     return (
@@ -25,23 +24,7 @@ export default function Home() {
             <Main />
             <Aection />
 
-            <footer className={styles.footer}>
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Powered by{" "}
-                    <span className={styles.logo}>
-                        <Image
-                            src="/vercel.svg"
-                            alt="Vercel Logo"
-                            width={72}
-                            height={16}
-                        />
-                    </span>
-                </a>
-            </footer>
+            <Foot />
         </div>
     );
 }

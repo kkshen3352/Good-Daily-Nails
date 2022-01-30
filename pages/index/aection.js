@@ -3,6 +3,14 @@ import styles from "/styles/Home.module.css";
 import Image from "next/image";
 
 export default function aection() {
+    const main = [
+        { text: "A",imgsrc:"" },
+        { text: "B",imgsrc:"" },
+        { text: "C",imgsrc:"" },
+        { text: "D",imgsrc:"" },
+        { text: "E",imgsrc:"" },
+        { text: "F",imgsrc:"" },
+    ];
     return (
         <>
             <section className={styles.back}>
@@ -24,48 +32,25 @@ export default function aection() {
                     }}
                     // 更改背景框度
                 >
-                    <div className={styles.Home_card___LpL1}>
-                        <Image
-                            className={styles.Home_card___LpL1Image}
-                            src="/images/DSC_9610.jpg"
-                            alt=""
-                            width={360}
-                            height={223}
-                        />
-                        <div className={styles.info}>
-                            <div style={{ marginTop: "60px" }}>
-                                <p>Hello World!</p>
+                    <div>
+                        {main.map(({ text }, i) => (
+                            <div className={styles.Home_card___LpL1} key={i}>
+                                <Image
+                                    className={styles.Home_card___LpL1Image}
+                                    src="/images/DSC_9610.jpg"
+                                    alt=""
+                                    width={360}
+                                    height={223}
+                                />
+                                <div className={styles.info}>
+                                    <div style={{ marginTop: "60px" }}>
+                                        <p>Nails{text}</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        ))}
                     </div>
-
-                    <div className={styles.Home_card___LpL1}>
-                        <Image
-                            src="/images/DSC_9610.jpg"
-                            alt=""
-                            width={360}
-                            height={223}
-                        />
-                        <div className={styles.info}>
-                            <div style={{ marginTop: "60px" }}>
-                                <p>Hello World!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={(styles.flex, styles.Home_card___LpL1)}>
-                        <Image
-                            src="/images/DSC_9610.jpg"
-                            alt=""
-                            width={360}
-                            height={223}
-                        />
-                        <div className={styles.info}>
-                            <div style={{ marginTop: "60px" }}>
-                                <p>Hello World!</p>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div
                     style={{
@@ -77,7 +62,7 @@ export default function aection() {
                         height: "50px",
                     }}
                 >
-                    <Link href="/" replace>
+                    <Link href="/work" replace>
                         <a>view more</a>
                     </Link>
                 </div>
