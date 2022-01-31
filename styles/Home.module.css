@@ -16,15 +16,6 @@
     margin: 0 auto;
 }
 
-.navbarfixedtop {
-    position: fixed;
-    top: 0px;
-    z-index: 999;
-    /* flex: 1; */
-    /* justify-content: center; */
-    /* align-items: center; */
-}
-
 .globalnavitemsns {
     position: fixed;
     top: 450px;
@@ -50,8 +41,16 @@
     padding: 1rem 0.5rem;
     margin: 0 auto;
     max-width: 100%;
-    width: 960px;
+    width: 1920px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: #fafafa;
+    align-content: center;
+    justify-content: center;
 }
+
 .navbox {
     margin: 0 1rem;
     padding: 1rem 1rem;
@@ -59,6 +58,7 @@
     max-height: auto;
     width: 350px;
 }
+
 .navp {
     display: flex;
     margin: 0 0.5rem;
@@ -320,11 +320,6 @@
 .workinfo:hover {
     -webkit-transition: 500ms;
     opacity: 1;
-}
-
-.logo {
-    height: 1em;
-    margin-left: 0.5rem;
 }
 
 /* RWD */

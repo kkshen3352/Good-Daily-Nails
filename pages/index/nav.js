@@ -4,21 +4,22 @@ import styles from "/styles/Home.module.css";
 
 export default function Nav() {
     return (
-        <nav className={(styles.navbarfixedtop, styles.container)}>
+        <nav className={styles.wrapper}>
+            <p style={{ height: "80px" }}></p>
+            {/* 卡位用 */}
             <div className={styles.nav}>
-                {/* <h3 className={styles.nav}>女子的日常</h3> */}
-
                 <Link href="/" replace>
-                    <Image
-                        className={styles.logo}
+                    <img
                         src="/images/LOGO.jpg"
                         alt=""
+                        maxWidth={100}
                         width={70}
                         height={70}
                     />
                     {/* <a className={styles.nav}>女子の日常</a> */}
                 </Link>
                 <div className={styles.navbox}></div>
+                {/* 卡位用 */}
                 <div className={styles.navp}>
                     <ul className={styles.flex}>
                         <li>
