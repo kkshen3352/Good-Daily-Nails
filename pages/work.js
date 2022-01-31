@@ -7,19 +7,19 @@ import Image from "next/image";
 
 export default function About() {
     const menu = [
-        { text: "全部", href: "/work" },
-        { text: "保養", href: "#1" },
-        { text: "凝膠", href: "#2" },
-        { text: "卸甲", href: "#3" },
-        { text: "客製化", href: "#4" },
-        { text: "教學", href: "#5" },
+        { text: "全部", more: "/work" },
+        { text: "保養", more: "#maintainance" },
+        { text: "凝膠", more: "#gel" },
+        { text: "卸甲", more: "#disarm" },
+        { text: "客製化", more: "#customized" },
+        { text: "教學", more: "#teaching" },
     ];
     const main = [
-        { more:'1',title: "保養 — メンテナンス —", text: "保養" },
-        { more:'2',title: "凝膠 — メンテナンス —", text: "凝膠" },
-        { more:'3',title: "卸甲 — メンテナンス —", text: "卸甲" },
-        { more:'4',title: "客製化 — メンテナンス —", text: "客製化" },
-        { more:'5',title: "教學 — メンテナンス —", text: "教學" },
+        { more:'maintainance',title: "保養 — メンテナンス —", text: "保養" },
+        { more:'gel',title: "凝膠 — メンテナンス —", text: "凝膠" },
+        { more:'disarm',title: "卸甲 — メンテナンス —", text: "卸甲" },
+        { more:'customized',title: "客製化 — メンテナンス —", text: "客製化" },
+        { more:'teaching',title: "教學 — メンテナンス —", text: "教學" },
     ];
     return (
         <>
@@ -35,10 +35,10 @@ export default function About() {
             <div className={styles.wrapper}>
                 <section className={styles.flex}>
                     <aside className={styles.workmeun}>
-                        <li >
-                            {menu.map(({ text,href }, i) => (
+                        <li>
+                            {menu.map(({ text,more }, i) => (
                                 <ul key={i}>
-                                    <Link href={href} replace>
+                                    <Link href={more} replace>
                                         <a>{text}</a>
                                     </Link>
                                 </ul>
