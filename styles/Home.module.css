@@ -251,18 +251,21 @@
 
 /* work */
 
-.workli {
-    max-width: 100%;
-    width: 100px;
-    height: auto;
+.workmeun {
+    position: fixed;
+    top: 250px;
+    left: 365px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
 }
 
 .Skillsbox {
     max-width: 100%;
     width: 960px;
     height: auto;
-    margin-left: 4rem;
-    padding-left: 4rem;
+    margin-left: 10rem;
+    padding-left: 10rem;
 }
 
 .worktitlecenter {

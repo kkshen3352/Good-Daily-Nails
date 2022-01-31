@@ -6,12 +6,20 @@ import Foot from "../pages/index/foot";
 import Image from "next/image";
 
 export default function About() {
+    const menu = [
+        { text: "全部", href: "/work" },
+        { text: "保養", href: "#1" },
+        { text: "凝膠", href: "#2" },
+        { text: "卸甲", href: "#3" },
+        { text: "客製化", href: "#4" },
+        { text: "教學", href: "#5" },
+    ];
     const main = [
-        { title: "保養 — メンテナンス —", text: "保養" },
-        { title: "凝膠 — メンテナンス —", text: "凝膠" },
-        { title: "卸甲 — メンテナンス —", text: "卸甲" },
-        { title: "客製化 — メンテナンス —", text: "客製化" },
-        { title: "教學 — メンテナンス —", text: "教學" },
+        { more:'1',title: "保養 — メンテナンス —", text: "保養" },
+        { more:'2',title: "凝膠 — メンテナンス —", text: "凝膠" },
+        { more:'3',title: "卸甲 — メンテナンス —", text: "卸甲" },
+        { more:'4',title: "客製化 — メンテナンス —", text: "客製化" },
+        { more:'5',title: "教學 — メンテナンス —", text: "教學" },
     ];
     return (
         <>
@@ -26,27 +34,35 @@ export default function About() {
 
             <div className={styles.wrapper}>
                 <section className={styles.flex}>
-                    <aside>
-                        <li className={styles.workli}>
-                            <ul>全部</ul>
-                            <ul>保養</ul>
-                            <ul>凝膠</ul>
-                            <ul>卸甲</ul>
-                            <ul>客製化</ul>
-                            <ul>教學</ul>
+                    <aside className={styles.workmeun}>
+                        <li >
+                            {menu.map(({ text,href }, i) => (
+                                <ul key={i}>
+                                    <Link href={href} replace>
+                                        <a>{text}</a>
+                                    </Link>
+                                </ul>
+                            ))}
                         </li>
                     </aside>
 
                     <main>
                         <div
                             className={styles.Skillsbox}
-                            style={{ textAlign: "left", display: "flex",flexDirection:'column' }}
+                            style={{
+                                textAlign: "left",
+                                display: "flex",
+                                flexDirection: "column",
+                            }}
                         >
-                            {main.map(({title,text},i) => (
-                                <div style={{ flexDirection: "column" }} key={i}>
+                            {main.map(({ more,title, text }, i) => (
+                                <div
+                                    style={{ flexDirection: "column" }}
+                                    key={i}
+                                >
                                     <div className={styles.worktitlecenter}>
                                         <p className={styles.boxbackground}></p>
-                                        <h2 style={{ marginLeft: "1rem" }}>
+                                        <h2 style={{ marginLeft: "1rem" }} id={more}>
                                             {title}
                                         </h2>
                                     </div>
