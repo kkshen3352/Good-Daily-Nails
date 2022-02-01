@@ -152,7 +152,7 @@
     display: flex;
     flex: 1;
     padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
+    /* border-top: 1px solid #eaeaea; */
     justify-content: center;
     align-items: center;
 }
@@ -322,6 +322,17 @@
     opacity: 1;
 }
 
+/* contact */
+.contacttable {
+    width: 300px;
+    height: 450px;
+    margin: 0 2rem;
+    font-size: 18px;
+}
+
+.contacttable li {
+    list-style-type: disc;
+}
 /* RWD */
 @media (max-width: 600px) {
     .grid {
