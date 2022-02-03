@@ -4,12 +4,12 @@ import Image from "next/image";
 
 export default function aection() {
     const main = [
-        { text: "maintainance", imgsrc: "", more: "maintainance" },
-        { text: "gel", imgsrc: "", more: "gel" },
-        { text: "disarm", imgsrc: "", more: "disarm" },
-        { text: "customized", imgsrc: "", more: "customized" },
-        { text: "teaching", imgsrc: "", more: "teaching" },
-        { text: "eyelash", imgsrc: "", more: "eyelash" },
+        { text:"保養",text1: "maintainance", imgsrc: "", more: "maintainance" },
+        { text:"凝膠",text1: "gel", imgsrc: "", more: "gel" },
+        { text:"卸甲",text1: "disarm", imgsrc: "", more: "disarm" },
+        { text:"造型",text1: "customized", imgsrc: "", more: "modeling" },
+        { text:"教學",text1: "teaching", imgsrc: "", more: "teaching" },
+        { text:"睫毛",text1: "eyelash", imgsrc: "", more: "eyelash" },
     ];
     return (
         <>
@@ -33,7 +33,7 @@ export default function aection() {
                     // 更改背景框度
                 >
                     <div>
-                        {main.map(({ text, more }, i) => (
+                        {main.map(({ text, text1,more }, i) => (
                             <div className={styles.Home_card___LpL1} key={i}>
                                 <Image
                                     className={styles.Home_card___LpL1Image}
@@ -44,8 +44,8 @@ export default function aection() {
                                 />
                                 <Link href={`/work/${more}`}>
                                     <a className={styles.info}>
-                                        <p style={{ marginTop: "60px" }}>
-                                            {text}
+                                        <p style={{ marginTop: "40px" }}>
+                                            {text}<br />{text1}
                                         </p>
                                     </a>
                                 </Link>

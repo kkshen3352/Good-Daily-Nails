@@ -33,11 +33,6 @@ export default function Nav() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/" replace>
-                                <a>Blog</a>
-                            </Link>
-                        </li>
-                        <li>
                             <Link href="/contact" replace>
                                 <a>Contact</a>
                             </Link>

@@ -11,7 +11,7 @@ export default function About() {
         { text: "保養", more: "#maintainance" },
         { text: "凝膠", more: "#gel" },
         { text: "卸甲", more: "#disarm" },
-        { text: "客製化", more: "#customized" },
+        { text: "造型", more: "#modeling" },
         { text: "教學", more: "#teaching" },
         { text: "睫毛", more: "#eyelash" },
     ];
@@ -20,9 +20,9 @@ export default function About() {
         { more: "gel", title: "凝膠 — メンテナンス —", text: "凝膠" },
         { more: "disarm", title: "卸甲 — メンテナンス —", text: "卸甲" },
         {
-            more: "customized",
-            title: "客製化 — メンテナンス —",
-            text: "客製化",
+            more: "modeling",
+            title: "造型 — メンテナンス —",
+            text: "造型",
         },
         { more: "teaching", title: "教學 — メンテナンス —", text: "教學" },
     ];

@@ -31,6 +31,9 @@
     padding-right: 1rem;
 }
 .globalnavitemsns a:hover {
+    /* filter: invert(83%) sepia(13%) saturate(406%) hue-rotate(344deg)
+        brightness(103%) contrast(84%); */
+    /*RGB #e4cdbb */
     filter: invert(86%) sepia(50%) saturate(2787%) hue-rotate(177deg)
         brightness(102%) contrast(101%);
     /* RGB #ACD6FF */
@@ -56,7 +59,7 @@
     padding: 1rem 1rem;
     max-width: 100%;
     max-height: auto;
-    width: 350px;
+    width: 550px;
 }
 
 .navp {
