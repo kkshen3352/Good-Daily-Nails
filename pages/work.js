@@ -15,11 +15,15 @@ export default function About() {
         { text: "教學", more: "#teaching" },
     ];
     const main = [
-        { more:'maintainance',title: "保養 — メンテナンス —", text: "保養" },
-        { more:'gel',title: "凝膠 — メンテナンス —", text: "凝膠" },
-        { more:'disarm',title: "卸甲 — メンテナンス —", text: "卸甲" },
-        { more:'customized',title: "客製化 — メンテナンス —", text: "客製化" },
-        { more:'teaching',title: "教學 — メンテナンス —", text: "教學" },
+        { more: "maintainance", title: "保養 — メンテナンス —", text: "保養" },
+        { more: "gel", title: "凝膠 — メンテナンス —", text: "凝膠" },
+        { more: "disarm", title: "卸甲 — メンテナンス —", text: "卸甲" },
+        {
+            more: "customized",
+            title: "客製化 — メンテナンス —",
+            text: "客製化",
+        },
+        { more: "teaching", title: "教學 — メンテナンス —", text: "教學" },
     ];
     return (
         <>
@@ -36,7 +40,7 @@ export default function About() {
                 <section className={styles.flex}>
                     <aside className={styles.workmeun}>
                         <li>
-                            {menu.map(({ text,more }, i) => (
+                            {menu.map(({ text, more }, i) => (
                                 <ul key={i}>
                                     <Link href={more} replace>
                                         <a>{text}</a>
@@ -55,14 +59,17 @@ export default function About() {
                                 flexDirection: "column",
                             }}
                         >
-                            {main.map(({ more,title, text }, i) => (
+                            {main.map(({ more, title, text }, i) => (
                                 <div
                                     style={{ flexDirection: "column" }}
                                     key={i}
                                 >
                                     <div className={styles.worktitlecenter}>
                                         <p className={styles.boxbackground}></p>
-                                        <h2 style={{ marginLeft: "1rem" }} id={more}>
+                                        <h2
+                                            style={{ marginLeft: "1rem" }}
+                                            id={more}
+                                        >
                                             {title}
                                         </h2>
                                     </div>
@@ -77,11 +84,12 @@ export default function About() {
                                             width={600}
                                             height={400}
                                         />
-                                        <div className={styles.workinfo}>
-                                            <div style={{ marginTop: "60px" }}>
-                                                <p>Nails{text}</p>
-                                            </div>
-                                        </div>
+
+                                        <Link href={`/work/${more}`}>
+                                            <a className={styles.workinfo}>
+                                                <p style={{marginTop:'50px'}}>Nails{text}</p>
+                                            </a>
+                                        </Link>
                                     </div>
                                 </div>
                             ))}
