@@ -13,6 +13,7 @@ export default function About() {
         { text: "卸甲", more: "#disarm" },
         { text: "客製化", more: "#customized" },
         { text: "教學", more: "#teaching" },
+        { text: "睫毛", more: "#eyelash" },
     ];
     const main = [
         { more: "maintainance", title: "保養 — メンテナンス —", text: "保養" },
