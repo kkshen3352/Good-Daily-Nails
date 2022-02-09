@@ -1,16 +1,11 @@
 import Link from "next/link";
 import styles from "/styles/Home.module.css";
 import Image from "next/image";
+import Navhead from "/JSON/navHead.json";
+import Imagework from "/JSON/index/imageWork.json"
 
 export default function aection() {
-    const main = [
-        { text:"保養",text1: "maintainance", imgsrc: "", more: "maintainance" },
-        { text:"凝膠",text1: "gel", imgsrc: "", more: "gel" },
-        { text:"卸甲",text1: "disarm", imgsrc: "", more: "disarm" },
-        { text:"造型",text1: "customized", imgsrc: "", more: "modeling" },
-        { text:"教學",text1: "teaching", imgsrc: "", more: "teaching" },
-        { text:"睫毛",text1: "eyelash", imgsrc: "", more: "eyelash" },
-    ];
+    
     return (
         <>
             <section className={styles.back}>
@@ -21,7 +16,7 @@ export default function aection() {
                         padding: "2rem",
                     }}
                 >
-                    Work
+                    {Navhead[1].name}
                 </h1>
                 <div
                     style={{
@@ -33,11 +28,11 @@ export default function aection() {
                     // 更改背景框度
                 >
                     <div>
-                        {main.map(({ text, text1,more }, i) => (
+                        {Imagework.map(({ text, text1, more,imgsrc }, i) => (
                             <div className={styles.Home_card___LpL1} key={i}>
                                 <Image
                                     className={styles.Home_card___LpL1Image}
-                                    src="/images/DSC_9610.jpg"
+                                    src={imgsrc}
                                     alt=""
                                     width={360}
                                     height={223}
@@ -45,7 +40,9 @@ export default function aection() {
                                 <Link href={`/work/${more}`}>
                                     <a className={styles.info}>
                                         <p style={{ marginTop: "40px" }}>
-                                            {text}<br />{text1}
+                                            {text}
+                                            <br />
+                                            {text1}
                                         </p>
                                     </a>
                                 </Link>
@@ -64,7 +61,7 @@ export default function aection() {
                     }}
                 >
                     <Link href="/work" replace>
-                        <a>view more</a>
+                        <a>{Navhead[3].link}</a>
                     </Link>
                 </div>
                 <div>
@@ -82,10 +79,10 @@ export default function aection() {
                         padding: "2rem",
                     }}
                 >
-                    <h1>Contact</h1>
-                    <p>お問い合わせ</p>
+                    <h1>{Navhead[2].name}</h1>
+                    <p>{Navhead[2].suntitle}</p>
                     <br />
-                    <p>お仕事のご相談やご依頼など、お気軽にご連絡ください！</p>
+                    <p>{Navhead[2].text}</p>
 
                     <Link href="/contact" replace>
                         <div
@@ -98,7 +95,7 @@ export default function aection() {
                                 background: "#eee",
                             }}
                         >
-                            <a>お問い合わせページへ</a>
+                            <a>{Navhead[2].button}</a>
                         </div>
                     </Link>
                 </div>

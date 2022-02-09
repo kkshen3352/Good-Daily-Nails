@@ -1,21 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "/styles/Home.module.css";
+import navHead from "/JSON/navHead.json";
 
 export default function Nav() {
+    const navlink = navHead;
     return (
         <nav className={styles.wrapper}>
             <p style={{ height: "80px" }}></p>
             {/* 卡位用 */}
             <div className={styles.nav}>
                 <Link href="/" replace>
-                    <img
-                        src="/images/LOGO.jpg"
-                        alt=""
-                        maxWidth={100}
-                        width={70}
-                        height={70}
-                    />
+                    <img src="/images/LOGO.jpg" alt="" width={70} height={70} />
                     {/* <a className={styles.nav}>女子の日常</a> */}
                 </Link>
                 <div className={styles.navbox}></div>
@@ -23,19 +19,11 @@ export default function Nav() {
                 <div className={styles.navp}>
                     <ul className={styles.flex}>
                         <li>
-                            <Link href="/about" replace>
-                                <a>About</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/work" replace>
-                                <a>Work</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/contact" replace>
-                                <a>Contact</a>
-                            </Link>
+                            {navlink.map((v, index) => (
+                                <Link href="/about" replace key={index}>
+                                    <a>{v.name}</a>
+                                </Link>
+                            ))}
                         </li>
                     </ul>
                 </div>

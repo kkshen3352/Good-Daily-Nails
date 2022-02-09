@@ -1,0 +1,44 @@
+[
+    {
+        "text": "保養",
+        "text1": "maintainance",
+        "imgsrc": "/images/DSC_9610.jpg",
+        "alt": "",
+        "more": "maintainance"
+    },
+    {
+        "text": "凝膠",
+        "text1": "gel",
+        "imgsrc": "/images/DSC_9610.jpg",
+        "alt": "",
+        "more": "gel"
+    },
+    {
+        "text": "卸甲",
+        "text1": "disarm",
+        "imgsrc": "/images/DSC_9610.jpg",
+        "alt": "",
+        "more": "disarm"
+    },
+    {
+        "text": "造型",
+        "text1": "customized",
+        "imgsrc": "/images/DSC_9610.jpg",
+        "alt": "",
+        "more": "modeling"
+    },
+    {
+        "text": "教學",
+        "text1": "teaching",
+        "imgsrc": "/images/DSC_9610.jpg",
+        "alt": "",
+        "more": "teaching"
+    },
+    {
+        "text": "睫毛",
+        "text1": "eyelash",
+        "imgsrc": "/images/DSC_9610.jpg",
+        "alt": "",
+        "more": "eyelash"
+    }
+]

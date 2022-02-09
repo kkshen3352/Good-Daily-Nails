@@ -3,17 +3,11 @@ import Nav from "../pages/index/nav";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import Foot from "/pages/index/foot"
+import Foot from "/pages/index/foot";
+import Experience from "/JSON/about/experience.json";
 
 export default function About() {
-    const main = [
-        { text: "2018", ation: "66666666666666" },
-        { text: "2019", ation: "44444444444444444" },
-        { text: "2021", ation: "3333333333333333333333" },
-        { text: "2022", ation: "2222222222222222222222" },
-        { text: "NEW!", ation: "111111111111111111111111" },
-    ];
-
+    const data = Experience;
     return (
         <>
             <Nav />
@@ -94,13 +88,13 @@ export default function About() {
                                     </h2>
 
                                     <div style={{ width: "960px" }}>
-                                        {main.map(({ text, ation }, i) => (
+                                        {data.map((v, index) => (
                                             <div
                                                 style={{ display: "flex" }}
-                                                key={i}
+                                                key={index}
                                             >
                                                 <div style={{ width: "120px" }}>
-                                                    {text}
+                                                    {v.year}
                                                 </div>
                                                 <div
                                                     style={{
@@ -120,7 +114,7 @@ export default function About() {
                                                         paddingLeft: "100px",
                                                     }}
                                                 >
-                                                    {ation}
+                                                    {v.main}
                                                 </div>
                                             </div>
                                         ))}
