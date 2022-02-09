@@ -4,7 +4,6 @@ import styles from "/styles/Home.module.css";
 import navHead from "/JSON/navHead.json";
 
 export default function Nav() {
-    const navlink = navHead;
     return (
         <nav className={styles.wrapper}>
             <p style={{ height: "80px" }}></p>
@@ -19,9 +18,9 @@ export default function Nav() {
                 <div className={styles.navp}>
                     <ul className={styles.flex}>
                         <li>
-                            {navlink.map((v, index) => (
-                                <Link href="/about" replace key={index}>
-                                    <a>{v.name}</a>
+                            {navHead.map(({ name, link }, i) => (
+                                <Link href={link} replace key={i}>
+                                    <a>{name}</a>
                                 </Link>
                             ))}
                         </li>

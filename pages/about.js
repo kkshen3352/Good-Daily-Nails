@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Foot from "/pages/index/foot";
 import Experience from "/JSON/about/experience.json";
+import ContactMain from "/JSON/navHead.json"
 
 export default function About() {
     const data = Experience;
@@ -134,10 +135,10 @@ export default function About() {
                         padding: "2rem",
                     }}
                 >
-                    <h1>Contact</h1>
-                    <p>お問い合わせ</p>
+                    <h1>{ContactMain[2].name}</h1>
+                    <p>{ContactMain[2].suntitle}</p>
                     <br />
-                    <p>お仕事のご相談やご依頼など、お気軽にご連絡ください！</p>
+                    <p>{ContactMain[2].text}</p>
 
                     <Link href="/contact" replace>
                         <div
@@ -150,7 +151,7 @@ export default function About() {
                                 background: "#eee",
                             }}
                         >
-                            <a>お問い合わせページへ</a>
+                            <a>{ContactMain[2].button}</a>
                         </div>
                     </Link>
                 </div>

@@ -1,13 +1,18 @@
 [
     {
-        "name": "About"
+        "name": "About",
+        "link": "/about",
+        "subtitle": "私について"
     },
     {
-        "name": "Work"
+        "name": "Work",
+        "link": "/work",
+        "subtitle": "制作したもの"
     },
     {
         "name": "Contact",
-        "suntitle": "お問い合わせ",
+        "link": "/contact",
+        "subtitle": "お問い合わせ",
         "text": "お仕事のご相談やご依頼など、お気軽にご連絡ください！",
         "button": "お問い合わせページへ"
     },
