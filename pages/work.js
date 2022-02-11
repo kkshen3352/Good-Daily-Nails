@@ -19,12 +19,12 @@ export default function work({ allPostsData }) {
                         <aside className={styles.workmeun}>
                             <li>
                                 {Menu.map(({ text, more }, i) => (
-                                    <ul key={i} style={{margin:"0"}}>
+                                    <ul key={i} style={{ margin: "0" }}>
                                         <Link href={more} replace>
                                             <a className={styles.flex}>
                                                 <p>—</p>
                                                 <p>{text}</p>
-                                                </a>
+                                            </a>
                                         </Link>
                                     </ul>
                                 ))}
@@ -44,10 +44,19 @@ export default function work({ allPostsData }) {
                                     <div
                                         style={{
                                             flexDirection: "column",
-                                            marginTop: "2rem",
+                                            marginTop: "-5rem",
                                         }}
                                         key={i}
                                     >
+                                        <h1
+                                            id={title}
+                                            style={{
+                                                visibility: "hidden",
+                                                paddingBottom: "1.6rem",
+                                            }}
+                                        >
+                                            {title}
+                                        </h1>
                                         <div className={styles.worktitlecenter}>
                                             <p
                                                 className={styles.boxbackground}
@@ -72,24 +81,18 @@ export default function work({ allPostsData }) {
                                                 width={600}
                                                 height={400}
                                             />
-
                                             <Link href={`/posts/${id}`}>
                                                 <a className={styles.workinfo}>
-                                                    <p
+                                                    <h3
                                                         style={{
-                                                            marginTop: "40px",
+                                                            marginTop: "170px",
                                                         }}
                                                     >
+                                                        {name}
                                                         {title}
-                                                    </p>
+                                                    </h3>
                                                 </a>
                                             </Link>
-                                            <p
-                                                id={title}
-                                                style={{ visibility: "hidden" }}
-                                            >
-                                                {name}
-                                            </p>
                                         </div>
                                     </div>
                                 ))}

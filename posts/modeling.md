@@ -1,6 +1,6 @@
 ---
 title: "modeling"
-date: "2020-01-04"
+# date: "2020-01-04"
 name: "造型"
 ---
 

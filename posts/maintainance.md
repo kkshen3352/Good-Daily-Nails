@@ -1,6 +1,6 @@
 ---
 title: "maintainance"
-date: "2020-01-07"
+# date: "2020-01-07"
 name: "保養"
 ---
 

@@ -1,9 +1,9 @@
 [
     { "text": "全部", "more": "/work" },
+    { "text": "教學", "more": "#teaching" },
+    { "text": "造型", "more": "#modeling" },
     { "text": "保養", "more": "#maintainance" },
     { "text": "凝膠", "more": "#gel" },
-    { "text": "卸甲", "more": "#disarm" },
-    { "text": "造型", "more": "#modeling" },
-    { "text": "教學", "more": "#teaching" },
-    { "text": "睫毛", "more": "#eyelash" }
+    { "text": "睫毛", "more": "#eyelash" },
+    { "text": "卸甲", "more": "#disarm" }
 ]
