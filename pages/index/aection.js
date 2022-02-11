@@ -37,7 +37,7 @@ export default function aection() {
                                     width={360}
                                     height={223}
                                 />
-                                <Link href={`/work/${more}`}>
+                                <Link href={`/posts/${more}`}>
                                     <a className={styles.info}>
                                         <p style={{ marginTop: "40px" }}>
                                             {text}

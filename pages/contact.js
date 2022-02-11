@@ -8,7 +8,9 @@ export default function About() {
     return (
         <>
             <Nav />
-            <div className={styles.wrapper} style={{ height: "75vh" }}>
+            <div className={styles.wrapper} 
+            // style={{ height: "76vh" }}
+            >
                 <h1 style={{ textAlign: "center" }}>{Title[2].name}</h1>
                 <p style={{ textAlign: "center" }}>{Title[2].subtitle}</p>
                 <div className={styles.flex} style={{ margin: "0 auto" }}>

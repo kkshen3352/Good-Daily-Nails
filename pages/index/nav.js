@@ -2,8 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "/styles/Home.module.css";
 import navHead from "/JSON/navHead.json";
+import LinkConfig from "/JSON/index/link_config.json"
 
 export default function Nav() {
+    const linkdata = LinkConfig
     return (
         <nav className={styles.wrapper}>
             <p style={{ height: "80px" }}></p>
@@ -30,13 +32,13 @@ export default function Nav() {
             <div className={styles.globalnavitemsns}>
                 <Link
                     classNam={styles.nsicon}
-                    href="https://www.facebook.com/Lk330825"
+                    href={linkdata[0].href}
                     replace
                 >
                     <a>
                         <Image
-                            src="/images/facebook.png"
-                            alt="facebook Logo"
+                            src={linkdata[0].src}
+                            alt={linkdata[0].alt}
                             width={32}
                             height={32}
                         />
@@ -44,13 +46,13 @@ export default function Nav() {
                 </Link>
                 <Link
                     classNam={styles.nsicon}
-                    href="https://www.instagram.com/good_daily_nails/"
+                    href={linkdata[1].href}
                     replace
                 >
                     <a>
                         <Image
-                            src="/images/instagram.png"
-                            alt="instagram Logo"
+                            src={linkdata[1].src}
+                            alt={linkdata[1].alt}
                             width={32}
                             height={32}
                         />
@@ -58,13 +60,13 @@ export default function Nav() {
                 </Link>
                 <Link
                     classNam={styles.nsicon}
-                    href="https://line.me/R/ti/p/%40vea0066b"
+                    href={linkdata[2].href}
                     replace
                 >
                     <a>
                         <Image
-                            src="/images/line.png"
-                            alt="line Logo"
+                            src={linkdata[2].src}
+                            alt={linkdata[2].alt}
                             width={36}
                             height={36}
                         />

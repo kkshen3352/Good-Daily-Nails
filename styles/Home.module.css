@@ -263,6 +263,7 @@
     display: flex;
     flex-direction: column;
     font-size: 18px;
+    font-family: "Unna", serif;
 }
 
 .workmeun ul:hover {
@@ -314,7 +315,7 @@
     top: 0;
     left: 9px;
     width: 91%;
-    height: 89%;
+    height: 78%;
     text-align: center;
     margin: 18px;
 }
