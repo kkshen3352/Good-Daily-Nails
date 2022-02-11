@@ -5,7 +5,8 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Foot from "/pages/index/foot";
 import Experience from "/JSON/about/experience.json";
-import ContactMain from "/JSON/navHead.json"
+import ContactMain from "/JSON/navHead.json";
+import Skills from "/JSON/about/skills.json";
 
 export default function About() {
     const data = Experience;
@@ -14,7 +15,7 @@ export default function About() {
             <Nav />
             <Head></Head>
 
-            <div className={styles.container}>
+            <div className={styles.container} style={{ height: "1500px" }}>
                 <div style={{ textAlign: "center", margin: "0 auto" }}>
                     <h1>About</h1>
                     <p>私について</p>
@@ -58,24 +59,64 @@ export default function About() {
                         {/* 技能 */}
                         <div
                             style={{
-                                margin: "2rem",
-                                padding: "2rem",
                                 width: "960px",
                                 height: "400px",
+                                paddingTop: "3rem",
                             }}
                         >
                             {/* 改寬度 */}
-                            <div className={styles.boxbackground}>
-                                <h2
-                                    style={{
-                                        width: "400px",
-                                        paddingLeft: "2rem",
-                                    }}
-                                >
-                                    Skills — できること —
-                                </h2>
+                            <div
+                                style={{
+                                    width: "960px",
+                                    height: "400px",
+                                }}
+                            >
+                                <div className={styles.boxbackground}>
+                                    <h2
+                                        style={{
+                                            width: "300px",
+                                            height: "100px",
+                                            paddingLeft: "2rem",
+                                        }}
+                                    >
+                                        Skills — できること —
+                                    </h2>
+                                </div>
+                                {Skills.map(({ skills, main }, i) => (
+                                    <div
+                                        className={styles.Home_card___LpL1}
+                                        key={i}
+                                    >
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                flexDirection: "column",
+                                            }}
+                                        >
+                                            <Image
+                                                className={
+                                                    styles.Home_card___LpL1Image
+                                                }
+                                                src="/images/DSC_3087.jpg"
+                                                alt=""
+                                                width={200}
+                                                height={200}
+                                                objectFit="cover"
+                                            />
+                                            <h4
+                                                style={{
+                                                    textAlign: "center",
+                                                }}
+                                            >
+                                                {skills}
+                                            </h4>
+                                            <p style={{ margin: "0" }}>
+                                                {main}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
-
                             {/* 經歷 */}
                             <div>
                                 <div className={styles.boxbackground}>
@@ -83,19 +124,25 @@ export default function About() {
                                         style={{
                                             width: "400px",
                                             paddingLeft: "2rem",
+                                            paddingBottom: "2rem",
                                         }}
                                     >
                                         Career — 経歴 —
                                     </h2>
 
-                                    <div style={{ width: "960px" }}>
-                                        {data.map((v, index) => (
+                                    <div>
+                                        {data.map(({ year, main }, i) => (
                                             <div
                                                 style={{ display: "flex" }}
-                                                key={index}
+                                                key={i}
                                             >
-                                                <div style={{ width: "120px" }}>
-                                                    {v.year}
+                                                <div
+                                                    style={{
+                                                        width: "120px",
+                                                        paddingRight: "50px",
+                                                    }}
+                                                >
+                                                    {year}
                                                 </div>
                                                 <div
                                                     style={{
@@ -112,10 +159,10 @@ export default function About() {
                                                 <div
                                                     style={{
                                                         width: "680px",
-                                                        paddingLeft: "100px",
+                                                        paddingLeft: "60px",
                                                     }}
                                                 >
-                                                    {v.main}
+                                                    {main}
                                                 </div>
                                             </div>
                                         ))}

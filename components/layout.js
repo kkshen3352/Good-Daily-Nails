@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
@@ -7,7 +6,6 @@ import Nav from "../pages/index/nav";
 import Foot from "../pages/index/foot";
 import Title from "/JSON/navHead.json";
 
-const name = "我是work pages";
 export const siteTitle = "Good Daily Nails";
 
 export default function Layout({ children, work }) {
@@ -47,7 +45,7 @@ export default function Layout({ children, work }) {
                     ) : (
                         <>
                             <Link href="/work">
-                                <a className={utilStyles.colorInherit}>
+                                <a className={utilStyles.colorInherit} style={{textAlign:"center"}}>
                                     <h1>{Title[1].name}</h1>
                                     <p>{Title[1].subtitle}</p>
                                 </a>
