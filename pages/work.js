@@ -16,7 +16,7 @@ export default function work({ allPostsData }) {
 
                 <div className={styles.wrapper}>
                     <section className={styles.flex}>
-                        <aside className={styles.workmeun}>
+                        {/* <aside className={styles.workmeun}>
                             <li>
                                 {Menu.map(({ text, more }, i) => (
                                     <ul key={i} style={{ margin: "0" }}>
@@ -29,7 +29,7 @@ export default function work({ allPostsData }) {
                                     </ul>
                                 ))}
                             </li>
-                        </aside>
+                        </aside> */}
 
                         <main>
                             <div
@@ -66,7 +66,7 @@ export default function work({ allPostsData }) {
                                                     marginLeft: "1rem",
                                                 }}
                                             >
-                                                {name} — {title}
+                                                {name}{title}
                                             </h2>
                                         </div>
                                         <div
