@@ -81,6 +81,7 @@
         display: none;
     }
 }
+
 @media screen and (max-width: 1440px) {
     .container {
         display: none;
@@ -97,8 +98,6 @@
         justify-content: center;
     }
     .globalnavitemsns a:hover {
-        /* filter: invert(86%) sepia(50%) saturate(2787%) hue-rotate(177deg)
-            brightness(102%) contrast(101%); */
         filter: invert(96%) sepia(6%) saturate(621%) hue-rotate(248deg)
             brightness(121%) contrast(100%);
     }
