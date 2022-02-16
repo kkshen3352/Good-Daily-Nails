@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "/styles/Home.module.css";
 import navHead from "/JSON/navHead.json";
 import LinkConfig from "/JSON/index/link_config.json"
+import Menu from "/components/curtain_menu"
 
 export default function Nav() {
     const linkdata = LinkConfig
@@ -26,6 +27,7 @@ export default function Nav() {
                                 </Link>
                             ))}
                         </li>
+                        <Menu />
                     </ul>
                 </div>
             </div>

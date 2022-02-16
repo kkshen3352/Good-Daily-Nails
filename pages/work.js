@@ -52,8 +52,9 @@ export default function work({ allPostsData }) {
                                             id={title}
                                             style={{
                                                 visibility: "hidden",
-                                                paddingBottom: "1.6rem",
+                                                paddingBottom: "3.8rem",
                                             }}
+                                            // 修正跑版
                                         >
                                             {title}
                                         </h1>

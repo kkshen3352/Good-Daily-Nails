@@ -23,8 +23,8 @@ export default function Main() {
                         src="/images/DSC_9610.jpg"
                         alt="Good Day Nails"
                         max-width={100}
-                        width={520}
-                        height={500}
+                        width={480}
+                        height={460}
                     />
                 </div>
             </div>
@@ -46,6 +46,7 @@ export default function Main() {
                 </div>
                 <div
                     style={{
+                        width:"520px",
                         margin: "3rem",
                         padding: "3rem",
                         backgroundColor: "#e4cdbb",

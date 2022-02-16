@@ -3,11 +3,13 @@ import styles from "/styles/Home.module.css";
 import Foot from "/pages/index/foot";
 import Title from "/JSON/navHead.json";
 import MapTable from "/JSON/contact/maptable.json";
+import Menu from "/components/curtain_menu";
 
 export default function About() {
     return (
         <>
             <Nav />
+            {/* <Menu /> */}
             <div className={styles.wrapper} 
             // style={{ height: "76vh" }}
             >
