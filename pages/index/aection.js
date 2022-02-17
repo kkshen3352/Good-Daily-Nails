@@ -79,7 +79,7 @@ export default function aection() {
                 </div>
             </section>
 
-            <section>
+            <section className={styles.backcontact}>
                 <div
                     style={{
                         textAlign: "center",
