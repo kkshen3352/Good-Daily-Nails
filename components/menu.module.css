@@ -29,7 +29,6 @@
 }
 
 .dropdown_menu {
-    /* list-style: none; */
     padding: 0;
     margin: 0;
     height: 100%;
@@ -54,6 +53,10 @@
     } */
 }
 
+.open {
+    width: 100%;
+}
+
 .container button:hover {
     border: 1px solid black;
 }
@@ -72,7 +75,7 @@
 .dropdown_menu__item a:hover {
     /* color: #818181; */
     color: #fff;
-    /* background-color: rgba(0, 0, 0, 0.14); */
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 

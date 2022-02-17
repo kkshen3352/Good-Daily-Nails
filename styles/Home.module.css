@@ -16,33 +16,6 @@
     margin: 0 auto;
 }
 
-.main {
-    min-height: 100vh;
-    padding: 1rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainbox {
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-}
-.maintitle {
-    /* top: 250px; */
-    font-size: 48px;
-    padding-top: 11rem;
-}
-
-.mainimage {
-    max-width: 100%;
-    margin: 1rem;
-    padding: 1rem;
-}
-
 /*Card*/
 .Home_card___LpL1 {
     /* 設定父親定位點 */
@@ -85,10 +58,6 @@
 .info:hover {
     -webkit-transition: 500ms;
     opacity: 1;
-}
-
-.back {
-    background-color: #e4cdbb;
 }
 
 .footer {

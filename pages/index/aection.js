@@ -1,11 +1,10 @@
 import Link from "next/link";
-import styles from "/styles/Home.module.css";
+import styles from "/styles/aection.module.css";
 import Image from "next/image";
 import Navhead from "/JSON/navHead.json";
-import Imagework from "/JSON/index/imageWork.json"
+import Imagework from "/JSON/index/imageWork.json";
 
 export default function aection() {
-    
     return (
         <>
             <section className={styles.back}>
@@ -19,21 +18,26 @@ export default function aection() {
                     {Navhead[1].name}
                 </h1>
                 <div
-                    style={{
-                        width: "960px",
-                        height: "440px",
-                        margin: "0 auto",
-                        padding: "0",
-                    }}
+                    className={styles.workmain}
+                    // style={{
+                    //     width: "960px",
+                    //     height: "440px",
+                    //     height: 100,
+                    //     margin: "0 auto",
+                    //     padding: "0",
+                    // }}
                     // 更改背景框度
                 >
-                    <div>
-                        {Imagework.map(({ text, text1, more,imgsrc }, i) => (
+                    <div
+                    // className={styles.flex}
+                    >
+                        {Imagework.map(({ text, text1, more, imgsrc }, i) => (
                             <div className={styles.Home_card___LpL1} key={i}>
                                 <Image
                                     className={styles.Home_card___LpL1Image}
                                     src={imgsrc}
                                     alt=""
+                                    // max-width={100}
                                     width={360}
                                     height={223}
                                 />
@@ -51,17 +55,21 @@ export default function aection() {
                     </div>
                 </div>
                 <div
-                    style={{
-                        paddingTop: "10px",
-                        textAlign: "center",
-                        margin: "0 auto",
-                        border: "1px solid black",
-                        width: "250px",
-                        height: "50px",
-                    }}
+                // style={{
+                //     paddingTop: "10px",
+                //     textAlign: "center",
+                //     margin: "0 auto",
+                //     border: "1px solid black",
+                //     width: "250px",
+                //     height: "50px",
+                // }}
                 >
                     <Link href="/work" replace>
-                        <a>{Navhead[3].link}</a>
+                        <a>
+                            <div className={styles.workbutton}>
+                                {Navhead[3].link}
+                            </div>
+                        </a>
                     </Link>
                 </div>
                 <div>
@@ -84,19 +92,12 @@ export default function aection() {
                     <br />
                     <p>{Navhead[2].text}</p>
 
-                    <Link href="/contact" replace>
-                        <div
-                            style={{
-                                paddingTop: "10px",
-                                margin: "0 auto",
-                                width: "250px",
-                                height: "50px ",
-                                border: "1px solid black",
-                                background: "#eee",
-                            }}
-                        >
-                            <a>{Navhead[2].button}</a>
-                        </div>
+                    <Link href="/contact">
+                        <a>
+                            <div className={styles.workbutton}>
+                                {Navhead[2].button}
+                            </div>
+                        </a>
                     </Link>
                 </div>
             </section>

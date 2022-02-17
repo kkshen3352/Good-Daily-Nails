@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "/styles/Home.module.css";
+import styles from "/styles/main.module.css";
 import IndexMain from "/JSON/index/indexMain.json";
 
 export default function Main() {
@@ -32,9 +32,9 @@ export default function Main() {
             {/* 關於我 */}
             <div
                 className={styles.flex}
-                style={{ margin: "3rem auto 2rem", padding: "3rem" }}
+                // style={{ margin: "3rem auto 2rem", padding: "3rem" }}
             >
-                <div>
+                <div className={styles.aboutimage}>
                     <Image
                         src="/images/DSC_3087.jpg"
                         alt="Girl"
@@ -45,17 +45,20 @@ export default function Main() {
                     />
                 </div>
                 <div
-                    style={{
-                        width:"520px",
-                        margin: "3rem",
-                        padding: "3rem",
-                        backgroundColor: "#e4cdbb",
-                    }}
+                    className={styles.aboutmain}
+                    // style={{
+                    //     width: "520px",
+                    //     margin: "3rem",
+                    //     padding: "3rem",
+                    //     backgroundColor: "#e4cdbb",
+                    // }}
                 >
-                    <h1 style={{ width: "350px", textAlign: "left" }}>
+                    <h1 
+                    // style={{ width: "350px", textAlign: "left" }}
+                    >
                         {IndexMain.About.title}
                     </h1>
-                    <p>{IndexMain.About.subtitle}</p>
+                    <h4>{IndexMain.About.subtitle}</h4>
                     <p>
                         {IndexMain.About.text}
                         <br />

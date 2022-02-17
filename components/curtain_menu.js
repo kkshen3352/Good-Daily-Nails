@@ -20,7 +20,6 @@ export default function CurtainMenu() {
     // };
     const [open, setOpen] = useState(false);
     const container = useRef(null);
-
     const handleClickOutside = (event) => {
         if (container.current && !container.current.contains(event.target)) {
             setOpen(false);
@@ -29,7 +28,6 @@ export default function CurtainMenu() {
 
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
-
         return () => {
             // clean up
             document.removeEventListener("mousedown", handleClickOutside);
