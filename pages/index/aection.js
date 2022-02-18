@@ -3,6 +3,7 @@ import styles from "/styles/aection.module.css";
 import Image from "next/image";
 import Navhead from "/JSON/navHead.json";
 import Imagework from "/JSON/index/imageWork.json";
+import Contact from "../index/contact";
 
 export default function aection() {
     return (
@@ -45,9 +46,7 @@ export default function aection() {
                 <div>
                     <Link href="/work" replace>
                         <a>
-                            <div
-                            className={styles.workbutton}
-                            >
+                            <div className={styles.workbutton}>
                                 {Navhead[3].link}
                             </div>
                         </a>
@@ -60,7 +59,8 @@ export default function aection() {
                 </div>
             </section>
 
-            <section className={styles.backcontact}>
+            <Contact />
+            {/* <section className={styles.backcontact}>
                 <div
                     style={{
                         textAlign: "center",
@@ -81,7 +81,7 @@ export default function aection() {
                         </a>
                     </Link>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 }

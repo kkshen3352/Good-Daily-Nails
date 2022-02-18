@@ -19,12 +19,10 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {/* index */}
             <Nav />
             <Main />
             <Aection />
-
-            {/* <Foot /> */}
+            <Foot />
         </div>
     );
 }
