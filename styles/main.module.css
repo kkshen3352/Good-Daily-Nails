@@ -2,6 +2,8 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main {
@@ -43,6 +45,7 @@
 .aboutmain {
     max-width: 100%;
     width: 520px;
+    height: 370px;
     margin: 3rem;
     padding: 3rem;
     background: #e4cdbb;
@@ -54,13 +57,10 @@
 .aboutmain h1 {
     text-align: left;
 }
-
-@media screen and (max-width: 1440px) {
-    .aboutmain {
-        position: relative;
-        z-index: -1;
-        margin: 0 auto;
-    }
+.abouttext {
+    width: 400px;
+    height: auto;
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 960px) {
@@ -90,7 +90,16 @@
         padding: 1rem;
     }
     .aboutmain {
-        left: 5%;
+        margin: 0 auto;
+    }
+    .aboutmain h1 {
+        text-align: right;
+    }
+    .aboutmain h4 {
+        text-align: right;
+    }
+    .aboutmain p {
+        margin-left: 7.5%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -113,5 +122,12 @@
         margin: 0;
         padding: 0;
         left: 0;
+    }
+    .aboutimage {
+        left: 0;
+    }
+    .aboutmain p {
+        width: 361px;
+        margin-left: 0;
     }
 }

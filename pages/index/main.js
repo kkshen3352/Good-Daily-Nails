@@ -31,7 +31,7 @@ export default function Main() {
                 </div>
 
                 {/* 關於我 */}
-                {/* <div
+                <div
                     className={styles.flex}
                     // style={{ margin: "3rem auto 2rem", padding: "3rem" }}
                 >
@@ -45,27 +45,11 @@ export default function Main() {
                             objectFit="cover"
                         />
                     </div>
-                    <div
-                        className={styles.aboutmain}
-                        // style={{
-                        //     width: "520px",
-                        //     margin: "3rem",
-                        //     padding: "3rem",
-                        //     backgroundColor: "#e4cdbb",
-                        // }}
-                    >
-                        <h1
-                        // style={{ width: "350px", textAlign: "left" }}
-                        >
-                            {IndexMain.About.title}
-                        </h1>
+                    <div className={styles.aboutmain}>
+                        <h1>{IndexMain.About.title}</h1>
                         <h4>{IndexMain.About.subtitle}</h4>
-                        <p>
+                        <p className={styles.abouttext}>
                             {IndexMain.About.text}
-                            <br />
-                            {IndexMain.About.text1}
-                            <br />
-                            {IndexMain.About.text2}
                         </p>
                         <div
                             style={{
@@ -89,7 +73,7 @@ export default function Main() {
                             />
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
         </>
     );
