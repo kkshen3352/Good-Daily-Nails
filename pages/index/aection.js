@@ -11,26 +11,14 @@ export default function aection() {
                 <h1
                     style={{
                         textAlign: "center",
-                        margin: "2rem",
-                        padding: "2rem",
+                        margin: "1.5rem",
+                        padding: "1.5rem",
                     }}
                 >
                     {Navhead[1].name}
                 </h1>
-                <div
-                    className={styles.workmain}
-                    // style={{
-                    //     width: "960px",
-                    //     height: "440px",
-                    //     height: 100,
-                    //     margin: "0 auto",
-                    //     padding: "0",
-                    // }}
-                    // 更改背景框度
-                >
-                    <div
-                    // className={styles.flex}
-                    >
+                <div className={styles.workmain}>
+                    <div>
                         {Imagework.map(({ text, text1, more, imgsrc }, i) => (
                             <div className={styles.Home_card___LpL1} key={i}>
                                 <Image
@@ -54,19 +42,12 @@ export default function aection() {
                         ))}
                     </div>
                 </div>
-                <div
-                // style={{
-                //     paddingTop: "10px",
-                //     textAlign: "center",
-                //     margin: "0 auto",
-                //     border: "1px solid black",
-                //     width: "250px",
-                //     height: "50px",
-                // }}
-                >
+                <div>
                     <Link href="/work" replace>
                         <a>
-                            <div className={styles.workbutton}>
+                            <div
+                            className={styles.workbutton}
+                            >
                                 {Navhead[3].link}
                             </div>
                         </a>

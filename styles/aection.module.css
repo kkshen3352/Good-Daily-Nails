@@ -8,7 +8,8 @@
 }
 
 .workmain {
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
     height: 440px;
     margin: 0 auto;
     padding: 0;
@@ -67,9 +68,6 @@
     border: 1px solid black;
 }
 .workbutton:hover {
-    /* width: 250px;
-    height: 50px;
-    font-size: 22px; */
     color: #fff;
     background-color: #aaa;
     /* background-color: #e4cdbb; */
@@ -77,37 +75,30 @@
     border: 1px solid #fff;
 }
 
-.button a:hover {
-    /* border: 1px solid red; */
-    /* -webkit-transition: 500ms;
-    opacity: 1; */
-}
-
 @media screen and (max-width: 960px) {
+    .back {
+        margin-top: 2rem;
+    }
+    .workmain {
+        max-width: 960px;
+        width: 100%;
+        height: 420px;
+        margin: 0 auto;
+    }
     .Home_card___LpL1 {
-        width: 30%;
+        position: relative;
+        left: 0.5%;
+        max-width: 31%;
         height: 100%;
-        margin: 0.5rem;
-        padding: 0.5rem;
     }
 }
 
 @media screen and (max-width: 520px) {
-    .back {
-        max-width: 100%;
-        width: 520px;
-        margin: 0;
-        padding: 0;
-    }
-    .backcontact {
-        max-width: 100%;
-        width: 520px;
-        margin: 0;
-        padding: 0;
-    }
     .workmain {
+        max-width: 960px;
         width: 100%;
-        height: 100%;
+        height: 1220px;
+        margin: 0 auto;
     }
     .Home_card___LpL1 {
         float: none;

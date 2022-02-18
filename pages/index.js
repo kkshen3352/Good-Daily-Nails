@@ -22,7 +22,7 @@ export default function Home() {
             {/* index */}
             <Nav />
             <Main />
-            {/* <Aection /> */}
+            <Aection />
 
             {/* <Foot /> */}
         </div>

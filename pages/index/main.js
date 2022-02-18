@@ -6,7 +6,7 @@ import IndexMain from "/JSON/index/indexMain.json";
 export default function Main() {
     return (
         <>
-            <div>
+            <div className={styles.wrapper}>
                 <div className={styles.flex}>
                     <h1 className={(styles.mainbox, styles.maintitle)}>
                         {IndexMain.Main.title}
