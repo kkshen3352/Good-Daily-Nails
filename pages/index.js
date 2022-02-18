@@ -6,7 +6,7 @@ import Link from "next/link";
 import Nav from "../pages/index/nav";
 import Main from "../pages/index/main";
 import Aection from "../pages/index/aection";
-import Foot from "../pages/index/foot"
+import Foot from "../pages/index/foot";
 
 export default function Home() {
     return (
@@ -22,9 +22,9 @@ export default function Home() {
             {/* index */}
             <Nav />
             <Main />
-            <Aection />
+            {/* <Aection /> */}
 
-            <Foot />
+            {/* <Foot /> */}
         </div>
     );
 }

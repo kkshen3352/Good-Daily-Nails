@@ -60,27 +60,3 @@ h6 {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
         DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
-
-@media screen and (max-width: 960px) {
-    html,
-    body {
-        max-width: 1440px;
-        width: 1020px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    html,
-    body {
-        max-width: 960px;
-        width: 960px;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    html,
-    body {
-        max-width: 500px;
-        width: 500px;
-    }
-}
