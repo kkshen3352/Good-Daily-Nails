@@ -18,21 +18,14 @@ export default function About() {
             <Nav />
             <Head></Head>
 
-            <div
-                className={styles.wrapper}
-                // style={{ height: "1400px" }}
-            >
+            <div className={styles.wrapper}>
                 <div style={{ textAlign: "center", margin: "0 auto" }}>
                     <h1>About</h1>
                     <p>私について</p>
                 </div>
 
-                <div
-                // className={styles.flex}
-                >
-                    <main
-                    // style={{ padding: "1rem", margin: "1rem" }}
-                    >
+                <div>
+                    <main>
                         <div className={styles.flex}>
                             <div className={styles.aboutmain}>
                                 <p>
@@ -54,15 +47,7 @@ export default function About() {
                         </div>
 
                         <div className={styles.boxbackground}>
-                            <h2
-                                style={{
-                                    width: "350px",
-                                    height: "100px",
-                                    paddingLeft: "2rem",
-                                }}
-                            >
-                                Skills — できること —
-                            </h2>
+                            <h2>Skills — できること —</h2>
                         </div>
                         <div className={styles.skillbox}>
                             {Skills.map(({ skills, main }, i) => (

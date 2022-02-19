@@ -50,6 +50,13 @@
     margin-left: 17px;
 }
 
+.boxbackground h2 {
+    width: 350px;
+    height: 100px;
+    margin-top: 4rem;
+    padding-left: 2rem;
+}
+
 .careerborder {
     font-size: 70px;
     width: 10px;
