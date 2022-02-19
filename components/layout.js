@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "./layout.module.css";
+import styles from "/styles/work/work.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Nav from "../pages/index/nav";
@@ -13,42 +13,33 @@ export default function Layout({ children, work }) {
     return (
         <>
             <Nav />
-            <div className={styles.wrapper}>
-                <section className={styles.flex}>
-                    <aside className={styles.workmeun}>
-                        {work ? (
-                            <>
-                                <li>
-                                    {Menu.map(({ text, more }, i) => (
-                                        <ul key={i} style={{ margin: "0" }}>
-                                            <Link href={more}>
-                                                <a className={styles.flex}>
-                                                    <p>—&ensp;</p>
-                                                    <p>{text}</p>
-                                                </a>
-                                            </Link>
-                                        </ul>
-                                    ))}
-                                </li>
-                            </>
-                        ) : (
-                            <>
-                                <li>
-                                    {Menu.map(({ text, moreposts }, i) => (
-                                        <ul key={i} style={{ margin: "0" }}>
-                                            <Link href={moreposts}>
-                                                <a className={styles.flex}>
-                                                    <p>—&ensp;</p>
-                                                    <p>{text}</p>
-                                                </a>
-                                            </Link>
-                                        </ul>
-                                    ))}
-                                </li>
-                            </>
-                        )}
-                    </aside>
-                    <div className={styles.container}>
+            <div>
+                <header className={styles.header}>
+                    {work ? (
+                        <>
+                            <div>
+                                <h1>{Title[1].name}</h1>
+                                <p>{Title[1].subtitle}</p>
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <Link href="/work">
+                                <a
+                                    className={utilStyles.colorInherit}
+                                    style={{ textAlign: "center" }}
+                                >
+                                    <h1>{Title[1].name}</h1>
+                                    <p>{Title[1].subtitle}</p>
+                                </a>
+                            </Link>
+                        </>
+                    )}
+                </header>
+                <section>
+                    <div 
+                    className={styles.container}
+                    >
                         <Head>
                             <link rel="icon" href="/favicon.ico" />
                             <meta
@@ -67,34 +58,60 @@ export default function Layout({ children, work }) {
                                 content="summary_large_image"
                             />
                         </Head>
-                        <header className={styles.header}>
-                            {work ? (
-                                <>
-                                    <div
-                                        style={{
-                                            textAlign: "center",
-                                            margin: "0 auto",
-                                        }}
-                                    >
-                                        <h1>{Title[1].name}</h1>
-                                        <p>{Title[1].subtitle}</p>
-                                    </div>
-                                </>
-                            ) : (
-                                <>
-                                    <Link href="/work">
-                                        <a
-                                            className={utilStyles.colorInherit}
-                                            style={{ textAlign: "center" }}
-                                        >
-                                            <h1>{Title[1].name}</h1>
-                                            <p>{Title[1].subtitle}</p>
-                                        </a>
-                                    </Link>
-                                </>
-                            )}
-                        </header>
-                        <main style={{width:"660px"}}>{children}</main>
+
+                        <main className={styles.main}>
+                            <aside className={styles.workmeun}>
+                                {work ? (
+                                    <>
+                                        <li>
+                                            {Menu.map(({ text, more }, i) => (
+                                                <ul
+                                                    key={i}
+                                                    style={{ margin: "0" }}
+                                                >
+                                                    <Link href={more}>
+                                                        <a
+                                                            className={
+                                                                styles.flex
+                                                            }
+                                                        >
+                                                            <p>—&ensp;{text}</p>
+                                                        </a>
+                                                    </Link>
+                                                </ul>
+                                            ))}
+                                        </li>
+                                    </>
+                                ) : (
+                                    <>
+                                        <li>
+                                            {Menu.map(
+                                                ({ text, moreposts }, i) => (
+                                                    <ul
+                                                        key={i}
+                                                        style={{ margin: "0" }}
+                                                    >
+                                                        <Link href={moreposts}>
+                                                            <a
+                                                                className={
+                                                                    styles.flex
+                                                                }
+                                                            >
+                                                                <p>
+                                                                    —&ensp;
+                                                                    {text}
+                                                                </p>
+                                                            </a>
+                                                        </Link>
+                                                    </ul>
+                                                )
+                                            )}
+                                        </li>
+                                    </>
+                                )}
+                            </aside>
+                            {children}
+                        </main>
                         {!work && (
                             <div className={styles.backToHome}>
                                 <Link href="/work">

@@ -1,10 +1,13 @@
-.container {
-    /* max-width: 36rem; */
+/* .container {
+    max-width: 36rem;
     max-width: 490px;
     padding: 0 1rem;
     margin: 3rem auto 6rem;
 }
 
+.main {
+    width: 600px;
+}
 .header {
     display: flex;
     flex-direction: column;
@@ -40,4 +43,4 @@
     align-content: center;
     justify-content: center;
     margin: 0 auto;
-}
+} */

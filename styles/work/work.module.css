@@ -1,0 +1,224 @@
+.container {
+    /* max-width: 36rem; */
+    max-width: 660px;
+    padding: 0 1rem;
+    margin: 3rem auto 3rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
+
+.boxbackground {
+    width: 20px;
+    height: 30px;
+    background-color: #e4cdbb;
+    margin: 20px 0 0 0;
+    margin-left: 17px;
+}
+
+.workmeun {
+    position: fixed;
+    top: 36%;
+    left: 15%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Unna", serif;
+}
+
+.wrapper {
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main {
+    max-width: 660px;
+    width: 100%;
+}
+
+.workmeun ul:hover {
+    color: #aaa;
+}
+
+.Skillsbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.Toptext {
+    margin-top: -7rem;
+}
+
+.texthidden {
+    visibility: hidden;
+    padding-bottom: 3.8rem;
+}
+
+.worktitlecenter {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .maintainance {
+    max-width: 100%;
+    width: 760px;
+    height: 450px;
+} */
+
+/* workinfo */
+.Work_card___LpL1 {
+    /* 設定父親定位點 */
+    position: relative;
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    object-fit: fill;
+    float: left;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.Work_card___LpL1 Image {
+    width: 100%;
+}
+.workinfo {
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 3px;
+    left: 9px;
+    width: 90.5%;
+    height: 87.5%;
+    text-align: center;
+    margin: 18px;
+}
+
+.workinfo h3 {
+    margin-top: 160px;
+}
+.workinfo p {
+    padding-top: 120px;
+    color: black;
+}
+.workinfo:hover {
+    -webkit-transition: 500ms;
+    opacity: 1;
+}
+
+.header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
+
+.wrapper {
+    max-width: 960px;
+    max-height: auto;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+    .workmeun {
+        left: 8%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .workmeun {
+        left: 0%;
+    }
+}
+@media screen and (max-width: 820px) {
+    .container {
+        max-width: 560px;
+        padding: 0 1rem;
+        margin: 3rem auto 3rem;
+    }
+    .workinfo {
+        width: 89.5%;
+        height: 85.5%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: row;
+    }
+    .workmeun {
+        position: relative;
+        left: 0;
+        margin-left: -40px;
+    }
+    .workmeun li {
+        width: 580px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Work_card___LpL1 {
+        margin: 0;
+        padding: 0;
+    }
+    .worktitlecenter {
+        margin-left: -17px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .workmeun li {
+        width: 480px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .workmeun li {
+        width: 390px;
+    }
+    .workinfo {
+        top: 3px;
+        left: 3px;
+        width: 89.5%;
+        height: 83.5%;
+    }
+    .workinfo h3 {
+        margin-top: 110px;
+    }
+    .worktitlecenter {
+        margin-left: -17px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .workmeun {
+        margin-left: 0px;
+    }
+    .workmeun li {
+        width: 360px;
+    }
+}

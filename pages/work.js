@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "/styles/work/work.module.css";
 import Image from "next/image";
 import Menu from "/JSON/work/menu.json";
 import Layout, { siteTitle } from "../components/layout";
@@ -14,93 +14,60 @@ export default function work({ allPostsData }) {
                     <title>{siteTitle}</title>
                 </Head>
 
-                <div className={styles.wrapper}>
-                    <section className={styles.flex}>
-                        {/* <aside className={styles.workmeun}>
-                            <li>
-                                {Menu.map(({ text, more }, i) => (
-                                    <ul key={i} style={{ margin: "0" }}>
-                                        <Link href={more} replace>
-                                            <a className={styles.flex}>
-                                                <p>—</p>
-                                                <p>{text}</p>
+                <section>
+                    <main>
+                        <div className={styles.Skillsbox}>
+                            {allPostsData.map(({ id, title, name }, i) => (
+                                <div
+                                className={styles.Toptext}
+                                    key={i}
+                                >
+                                    <h1
+                                    className={styles.texthidden}
+                                        id={title}
+                                        // 修正跑版
+                                    >
+                                        {title}
+                                    </h1>
+                                    <div className={styles.worktitlecenter}>
+                                        <p className={styles.boxbackground}></p>
+                                        <h2
+                                            style={{
+                                                marginLeft: "1rem",
+                                            }}
+                                        >
+                                            {name}
+                                            {title}
+                                        </h2>
+                                    </div>
+                                    <div className={styles.Work_card___LpL1}>
+                                        <Image
+                                            className={
+                                                styles.Work_card___LpL1Image
+                                            }
+                                            src="/images/DSC_9610.jpg"
+                                            alt=""
+                                            width={600}
+                                            height={400}
+                                        />
+                                        <Link href={`/posts/${id}`}>
+                                            <a className={styles.workinfo}>
+                                                <h3
+                                                    // style={{
+                                                    //     marginTop: "160px",
+                                                    // }}
+                                                >
+                                                    {name}
+                                                    {title}
+                                                </h3>
                                             </a>
                                         </Link>
-                                    </ul>
-                                ))}
-                            </li>
-                        </aside> */}
-
-                        <main>
-                            <div
-                                className={styles.Skillsbox}
-                                style={{
-                                    textAlign: "left",
-                                    display: "flex",
-                                    flexDirection: "column",
-                                }}
-                            >
-                                {allPostsData.map(({ id, title, name }, i) => (
-                                    <div
-                                        style={{
-                                            flexDirection: "column",
-                                            marginTop: "-5rem",
-                                        }}
-                                        key={i}
-                                    >
-                                        <h1
-                                            id={title}
-                                            style={{
-                                                visibility: "hidden",
-                                                paddingBottom: "3.8rem",
-                                            }}
-                                            // 修正跑版
-                                        >
-                                            {title}
-                                        </h1>
-                                        <div className={styles.worktitlecenter}>
-                                            <p
-                                                className={styles.boxbackground}
-                                            ></p>
-                                            <h2
-                                                style={{
-                                                    marginLeft: "1rem",
-                                                }}
-                                            >
-                                                {name}{title}
-                                            </h2>
-                                        </div>
-                                        <div
-                                            className={styles.Work_card___LpL1}
-                                        >
-                                            <Image
-                                                className={
-                                                    styles.Work_card___LpL1Image
-                                                }
-                                                src="/images/DSC_9610.jpg"
-                                                alt=""
-                                                width={600}
-                                                height={400}
-                                            />
-                                            <Link href={`/posts/${id}`}>
-                                                <a className={styles.workinfo}>
-                                                    <h3
-                                                        style={{
-                                                            marginTop: "170px",
-                                                        }}
-                                                    >
-                                                        {name}
-                                                        {title}
-                                                    </h3>
-                                                </a>
-                                            </Link>
-                                        </div>
                                     </div>
-                                ))}
-                            </div>
-                        </main>
-                    </section>
-                </div>
+                                </div>
+                            ))}
+                        </div>
+                    </main>
+                </section>
             </Layout>
         </>
     );
