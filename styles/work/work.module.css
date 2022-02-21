@@ -216,7 +216,7 @@
 
 @media screen and (max-width: 450px) {
     .workmeun {
-        margin-left: 0px;
+        margin-left: 10px;
     }
     .workmeun li {
         width: 360px;
