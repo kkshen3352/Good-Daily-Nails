@@ -71,7 +71,7 @@
     transition: 0.3s;
     text-align: center;
     margin: 1rem;
-    z-index: 999;
+    z-index: 99;
 }
 .dropdown_menu__item a:hover {
     /* color: #818181; */
@@ -81,21 +81,21 @@
 }
 
 @media screen and (max-width: 1920px) {
-    .container {
+    /* .container {
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width: 1440px) {
-    .container {
+    /* .container {
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width: 760px) {
-    .container {
+    /* .container {
         display: block;
-    }
+    } */
     .globalnavitemsns {
         display: flex;
         flex-direction: row;
