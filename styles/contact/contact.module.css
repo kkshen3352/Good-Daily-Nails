@@ -27,8 +27,18 @@
         margin: 0 2rem;
     }
     .contacttable {
+        width: 250px;
         margin: 0 auto;
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .contactiframe {
+        width: 500px;
+    }
+    .contacttable {
+        margin-left: -10px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -38,10 +48,6 @@
     .contactiframe {
         max-width: 420px;
         width: 100%;
-        margin: 0 auto;
-    }
-    .contacttable {
-        padding: 1rem;
         margin: 0 auto;
     }
 }

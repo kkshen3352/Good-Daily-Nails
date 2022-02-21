@@ -1,5 +1,4 @@
 .container {
-    /* max-width: 36rem; */
     max-width: 660px;
     padding: 0 1rem;
     margin: 3rem auto 3rem;
@@ -78,15 +77,7 @@
     flex-direction: row;
 }
 
-/* .maintainance {
-    max-width: 100%;
-    width: 760px;
-    height: 450px;
-} */
-
-/* workinfo */
 .Work_card___LpL1 {
-    /* 設定父親定位點 */
     position: relative;
     max-width: 100%;
     width: 600px;
