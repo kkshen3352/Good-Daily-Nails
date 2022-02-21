@@ -44,70 +44,74 @@ export default function CurtainMenu() {
                 >
                     ☰
                 </button>
-            </div>
-            {open && (
-                <div className={styles.dropdown_wrapper}>
-                    <ul className={styles.dropdown_menu}>
-                        <div
-                            style={{
-                                width: "200px",
-                                height: "150px",
-                            }}
-                        ></div>
-                        {NavMenu.map(({ name, link }, i) => (
-                            <li key={i} className={styles.dropdown_menu__item}>
-                                <Link href={link}>
-                                    <a>{name}</a>
+
+                {open && (
+                    <div className={styles.dropdown_wrapper}>
+                        <ul className={styles.dropdown_menu}>
+                            <div
+                                style={{
+                                    width: "200px",
+                                    height: "150px",
+                                }}
+                            ></div>
+                            {NavMenu.map(({ name, link }, i) => (
+                                <li
+                                    key={i}
+                                    className={styles.dropdown_menu__item}
+                                >
+                                    <Link href={link}>
+                                        <a>{name}</a>
+                                    </Link>
+                                </li>
+                            ))}
+                            <div className={styles.globalnavitemsns}>
+                                <Link
+                                    classNam={styles.nsicon}
+                                    href={linkdata[0].href}
+                                    replace
+                                >
+                                    <a>
+                                        <Image
+                                            src={linkdata[0].src}
+                                            alt={linkdata[0].alt}
+                                            width={32}
+                                            height={32}
+                                        />
+                                    </a>
                                 </Link>
-                            </li>
-                        ))}
-                        <div className={styles.globalnavitemsns}>
-                            <Link
-                                classNam={styles.nsicon}
-                                href={linkdata[0].href}
-                                replace
-                            >
-                                <a>
-                                    <Image
-                                        src={linkdata[0].src}
-                                        alt={linkdata[0].alt}
-                                        width={32}
-                                        height={32}
-                                    />
-                                </a>
-                            </Link>
-                            <Link
-                                classNam={styles.nsicon}
-                                href={linkdata[1].href}
-                                replace
-                            >
-                                <a>
-                                    <Image
-                                        src={linkdata[1].src}
-                                        alt={linkdata[1].alt}
-                                        width={32}
-                                        height={32}
-                                    />
-                                </a>
-                            </Link>
-                            <Link
-                                classNam={styles.nsicon}
-                                href={linkdata[2].href}
-                                replace
-                            >
-                                <a>
-                                    <Image
-                                        src={linkdata[2].src}
-                                        alt={linkdata[2].alt}
-                                        width={36}
-                                        height={36}
-                                    />
-                                </a>
-                            </Link>
-                        </div>
-                    </ul>
-                </div>
-            )}
+                                <Link
+                                    classNam={styles.nsicon}
+                                    href={linkdata[1].href}
+                                    replace
+                                >
+                                    <a>
+                                        <Image
+                                            src={linkdata[1].src}
+                                            alt={linkdata[1].alt}
+                                            width={32}
+                                            height={32}
+                                        />
+                                    </a>
+                                </Link>
+                                <Link
+                                    classNam={styles.nsicon}
+                                    href={linkdata[2].href}
+                                    replace
+                                >
+                                    <a>
+                                        <Image
+                                            src={linkdata[2].src}
+                                            alt={linkdata[2].alt}
+                                            width={36}
+                                            height={36}
+                                        />
+                                    </a>
+                                </Link>
+                            </div>
+                        </ul>
+                    </div>
+                )}
+            </div>
         </>
     );
 }

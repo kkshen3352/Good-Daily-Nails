@@ -33,7 +33,7 @@
     padding: 0;
     margin: 0;
     height: 100%;
-    width: 50%;
+    width: 100%;
     position: fixed;
     z-index: 99;
     top: 102px;
@@ -89,6 +89,9 @@
 
 @media screen and (max-width: 760px) {
     .container {
+        display: block;
+    }
+    .dropdown_menu__item a {
         display: block;
     }
     .globalnavitemsns {
