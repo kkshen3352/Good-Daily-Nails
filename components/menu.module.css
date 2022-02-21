@@ -64,15 +64,15 @@
 
 .dropdown_menu a {
     padding: 8px;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 36px;
     /* color: #818181; */
     color: black;
     display: block;
     transition: 0.3s;
-    text-align: center;
+    /* text-align: center; */
     margin: 1rem;
-    z-index: 999;
+    /* z-index: 999; */
 }
 .dropdown_menu__item a:hover {
     /* color: #818181; */
@@ -90,9 +90,6 @@
 @media screen and (max-width: 760px) {
     .container {
         display: block;
-    }
-    .dropdown_menu {
-        border: 1px solid #eee;
     }
     .globalnavitemsns {
         display: flex;
