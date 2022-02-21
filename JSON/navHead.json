@@ -10,6 +10,13 @@
         "subtitle": "制作したもの"
     },
     {
+        "name": "Reserve",
+        "link": "/reserve",
+        "subtitle": "預約須知",
+        "text": "お仕事のご相談やご依頼など、お気軽にご連絡ください！",
+        "button": "お問い合わせページへ"
+    },
+    {
         "name": "Contact",
         "link": "/contact",
         "subtitle": "お問い合わせ",

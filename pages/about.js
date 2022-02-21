@@ -47,7 +47,7 @@ export default function About() {
                         </div>
 
                         <div className={styles.boxbackground}>
-                            <h2>Skills — できること —</h2>
+                            <h2>產品 — 製品 —</h2>
                         </div>
                         <div className={styles.skillbox}>
                             {Skills.map(({ skills, main }, i) => (
