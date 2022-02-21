@@ -81,21 +81,26 @@
 }
 
 @media screen and (max-width: 1920px) {
-    /* .container {
+    .container {
         display: none;
-    } */
+    }
 }
 
-@media screen and (max-width: 1440px) {
-    /* .container {
+/* @media screen and (max-width: 1440px) {
+    .container {
         display: none;
-    } */
-}
+    }
+} */
 
 @media screen and (max-width: 760px) {
-    /* .container {
+    .container {
         display: block;
-    } */
+    }
+    .dropdown_menu__item a {
+        display: block;
+        z-index: 1;
+        /* color: red; */
+    }
     .globalnavitemsns {
         display: flex;
         flex-direction: row;
