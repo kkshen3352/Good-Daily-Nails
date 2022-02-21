@@ -50,9 +50,13 @@
         width: 100%;
         margin: 0 auto;
     }
+    .contacttable {
+        margin: 0 auto;
+        width: 420px;
+    }
 }
 @media screen and (max-width: 396px) {
     .contactiframe {
-        max-width: 385px;
+        width: 420px;
     }
 }
