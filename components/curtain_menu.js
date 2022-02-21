@@ -36,7 +36,9 @@ export default function CurtainMenu() {
 
     return (
         <>
-            <div className={styles.container} ref={container}>
+            <div 
+            className={styles.container} 
+            ref={container}>
                 <button
                     type="button"
                     className={styles.button}

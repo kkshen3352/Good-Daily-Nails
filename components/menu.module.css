@@ -1,9 +1,10 @@
 .container {
+    display: none;
     /* border: 1px dashed black; */
-    position: relative;
-    display: inline-block;
-    flex-direction: row-reverse;
-    display: flex;
+    /* position: relative; */
+    /* display: inline-block; */
+    /* flex-direction: row-reverse; */
+    /* display: flex; */
 }
 
 .button {
@@ -80,11 +81,11 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1920px) {
+/* @media screen and (max-width: 1920px) {
     .container {
         display: none;
     }
-}
+} */
 
 @media screen and (max-width: 760px) {
     .container {
