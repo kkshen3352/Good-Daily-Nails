@@ -2,11 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "/styles/nav.module.css";
 import navHead from "/JSON/navHead.json";
-import LinkConfig from "/JSON/index/link_config.json"
-import Menu from "/components/curtain_menu"
+import LinkConfig from "/JSON/index/link_config.json";
+import Menu from "/components/curtain_menu";
 
 export default function Nav() {
-    const linkdata = LinkConfig
+    const linkdata = LinkConfig;
     return (
         <nav className={styles.wrapper}>
             <p style={{ height: "80px" }}></p>
@@ -22,8 +22,13 @@ export default function Nav() {
                     <ul className={styles.flex}>
                         <li>
                             {navHead.map(({ name, link }, i) => (
-                                <Link href={link} replace key={i}>
-                                    <a>{name}</a>
+                                <Link
+                                    href={link}
+                                    
+                                    replace
+                                    key={i}
+                                >
+                                    <a className={styles.navrwd}>{name}</a>
                                 </Link>
                             ))}
                         </li>
@@ -32,11 +37,7 @@ export default function Nav() {
                 </div>
             </div>
             <div className={styles.globalnavitemsns}>
-                <Link
-                    classNam={styles.nsicon}
-                    href={linkdata[0].href}
-                    replace
-                >
+                <Link classNam={styles.nsicon} href={linkdata[0].href} replace>
                     <a>
                         <Image
                             src={linkdata[0].src}
@@ -46,11 +47,7 @@ export default function Nav() {
                         />
                     </a>
                 </Link>
-                <Link
-                    classNam={styles.nsicon}
-                    href={linkdata[1].href}
-                    replace
-                >
+                <Link classNam={styles.nsicon} href={linkdata[1].href} replace>
                     <a>
                         <Image
                             src={linkdata[1].src}
@@ -60,11 +57,7 @@ export default function Nav() {
                         />
                     </a>
                 </Link>
-                <Link
-                    classNam={styles.nsicon}
-                    href={linkdata[2].href}
-                    replace
-                >
+                <Link classNam={styles.nsicon} href={linkdata[2].href} replace>
                     <a>
                         <Image
                             src={linkdata[2].src}
