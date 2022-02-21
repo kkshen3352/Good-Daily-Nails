@@ -34,7 +34,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 999;
+    z-index: 99;
     top: 100px;
     right: 0;
     background-color: #e4cdbb;
@@ -71,7 +71,7 @@
     transition: 0.3s;
     text-align: center;
     margin: 1rem;
-    z-index: 99;
+    z-index: 999;
 }
 .dropdown_menu__item a:hover {
     /* color: #818181; */
@@ -96,9 +96,13 @@
     .container {
         display: block;
     }
-    .dropdown_menu__item a {
+    .dropdown_menu__item {
+        /* display: none; */
         display: block;
-        z-index: 1;
+        z-index: 999;
+        /* border: 1px solid red; */
+    }
+    .dropdown_menu__item a {
         /* color: red; */
     }
     .globalnavitemsns {
