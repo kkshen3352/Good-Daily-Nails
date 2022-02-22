@@ -2,26 +2,24 @@
     {
         "name": "About",
         "link": "/about",
-        "subtitle": "私について"
+        "subtitle": "關於我"
     },
     {
         "name": "Work",
         "link": "/work",
-        "subtitle": "制作したもの"
+        "subtitle": "工作項目"
     },
     {
         "name": "Reserve",
         "link": "/reserve",
-        "subtitle": "預約須知",
-        "text": "お仕事のご相談やご依頼など、お気軽にご連絡ください！",
-        "button": "お問い合わせページへ"
+        "subtitle": "預約須知"
     },
     {
         "name": "Contact",
         "link": "/contact",
-        "subtitle": "お問い合わせ",
-        "text": "お仕事のご相談やご依頼など、お気軽にご連絡ください！",
-        "button": "お問い合わせページへ"
+        "subtitle": "聯絡地址",
+        "text": "請隨時聯繫我們進行工作諮詢和要求！",
+        "button": "到店與我們聯繫"
     },
     {
         "link": "view more"

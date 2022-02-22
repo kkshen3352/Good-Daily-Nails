@@ -6,6 +6,16 @@
     background: #e4cdbb;
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex p {
+    margin-bottom: 2px;
+}
+
 .resevertitle {
     margin: 1rem;
     padding: 1rem;

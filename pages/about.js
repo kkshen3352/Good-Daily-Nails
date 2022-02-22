@@ -5,10 +5,10 @@ import styles from "../styles/about/about.module.css";
 import Image from "next/image";
 import Foot from "/pages/index/foot";
 import Experience from "/JSON/about/experience.json";
-import ContactMain from "/JSON/navHead.json";
 import Skills from "/JSON/about/skills.json";
 import AboutMe from "/JSON/about/aboutme.json";
 import Contact from "./index/contact";
+import Navtitle from "/JSON/navHead.json"
 
 export default function About() {
     const data = Experience;
@@ -20,8 +20,8 @@ export default function About() {
 
             <div className={styles.wrapper}>
                 <div style={{ textAlign: "center", margin: "0 auto" }}>
-                    <h1>About</h1>
-                    <p>私について</p>
+                    <h1>{Navtitle[0].name}</h1>
+                    <p>{Navtitle[0].subtitle}</p>
                 </div>
 
                 <div>

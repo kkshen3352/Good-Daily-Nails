@@ -15,15 +15,18 @@ export default function Reserve() {
         <>
             <Nav />
             <div className={styles.wrapper}>
-                <h1 className={styles.resevertitle}>{titledata.title}</h1>
-
+                <div className={styles.resevertitle}>
+                    <div className={styles.flex}>
+                    <h1>{titledata.title}</h1>
+                    <p>&ensp;&ensp;{titledata.subtitle}</p></div>
+                </div>
                 <div className={styles.reseverbox}>
                     {maindata.map(({ main }, i) => (
                         <ul key={i}>
                             <li>{main}</li>
                         </ul>
                     ))}
-                    <div style={{ height: "30px" }}></div>
+                    <div style={{ height: "35px" }}></div>
                 </div>
             </div>
             <Foot />
