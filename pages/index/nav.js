@@ -12,8 +12,10 @@ export default function Nav() {
             <p style={{ height: "80px" }}></p>
             {/* 卡位用 */}
             <div className={styles.nav}>
-                <Link href="/" replace>
-                    <img src="/images/LOGO.jpg" alt="" width={70} height={70} />
+                <Link href="/" replace className={styles.navicon}>
+                    <img src="/images/LOGO.jpg" alt="" width={70} height={70} 
+                    style={{marginLeft:"0.5rem"}}
+                    />
                     {/* <a className={styles.nav}>女子の日常</a> */}
                 </Link>
                 <div className={styles.navbox}></div>
