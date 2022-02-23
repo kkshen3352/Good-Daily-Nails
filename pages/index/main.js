@@ -26,6 +26,7 @@ export default function Main() {
                             max-width={100}
                             width={480}
                             height={460}
+                            // objectFit="cover"
                         />
                     </div>
                 </div>
