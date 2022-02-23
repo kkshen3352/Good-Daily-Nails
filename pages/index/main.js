@@ -21,7 +21,7 @@ export default function Main() {
                     </h1>
                     <div className={styles.mainimage}>
                         <Image
-                            src="/images/DSC_9610.jpg"
+                            src="/images/nails_index.jpg"
                             alt="Good Day Nails"
                             max-width={100}
                             width={480}

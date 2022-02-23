@@ -12,7 +12,6 @@ import Navtitle from "/JSON/navHead.json"
 
 export default function About() {
     const data = Experience;
-    console.log(AboutMe);
     return (
         <>
             <Nav />
