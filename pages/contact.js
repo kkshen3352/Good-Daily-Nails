@@ -4,10 +4,19 @@ import Foot from "/pages/index/foot";
 import Title from "/JSON/navHead.json";
 import MapTable from "/JSON/contact/maptable.json";
 import Menu from "/components/curtain_menu";
+import Head from "next/head";
 
 export default function About() {
     return (
         <>
+        <Head>
+                <title>女子の日常-聯絡地址</title>
+                <meta
+                    name="description"
+                    content="女子の日常-聯絡地址"
+                />
+                <link rel="icon" href="/images/LOGO.jpg" />
+            </Head>
             <Nav />
             <div className={styles.wrapper}>
                 <h1 style={{ textAlign: "center" }}>{Title[3].name}</h1>

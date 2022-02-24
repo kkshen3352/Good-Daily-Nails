@@ -15,7 +15,14 @@ export default function About() {
     return (
         <>
             <Nav />
-            <Head></Head>
+            <Head>
+                <title>女子の日常-關於我</title>
+                <meta
+                    name="description"
+                    content="女子の日常-關於我"
+                />
+                <link rel="icon" href="/images/LOGO.jpg" />
+            </Head>
 
             <div className={styles.wrapper}>
                 <div style={{ textAlign: "center", margin: "0 auto" }}>

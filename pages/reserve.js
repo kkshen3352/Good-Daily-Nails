@@ -12,6 +12,11 @@ export default function Reserve() {
 
     return (
         <>
+            <Head>
+                <title>女子の日常-預約須知</title>
+                <meta name="description" content="女子の日常-預約須知" />
+                <link rel="icon" href="/images/LOGO.jpg" />
+            </Head>
             <Nav />
 
             <div className={styles.wrapper}>
@@ -23,8 +28,8 @@ export default function Reserve() {
                 </div>
                 <div className={styles.reseverbox}>
                     {maindata.map(({ main }, i) => (
-                        <ul key={i} >
-                            <li className={styles.flex}> 
+                        <ul key={i}>
+                            <li className={styles.flex}>
                                 ※&ensp;<p>{main}</p>
                             </li>
                         </ul>

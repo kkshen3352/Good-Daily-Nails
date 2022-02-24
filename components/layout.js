@@ -7,7 +7,7 @@ import Foot from "../pages/index/foot";
 import Title from "/JSON/navHead.json";
 import Menu from "/JSON/work/menu.json";
 
-export const siteTitle = "Good Daily Nails";
+export const siteTitle = "女子の日常-工作項目";
 
 export default function Layout({ children, work }) {
     return (
@@ -41,10 +41,10 @@ export default function Layout({ children, work }) {
                     className={styles.container}
                     >
                         <Head>
-                            <link rel="icon" href="/favicon.ico" />
+                            <link rel="icon" href="/images/LOGO.jpg" />
                             <meta
                                 name="description"
-                                content="Learn how to build a personal website using Next.js"
+                                content="女子の日常-工作項目"
                             />
                             <meta
                                 property="og:image"
