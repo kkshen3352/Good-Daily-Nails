@@ -23,10 +23,10 @@ export default function Main() {
                         <Image
                             src="/images/nails_index.jpg"
                             alt="Good Day Nails"
-                            max-width={100}
+                            // max-width={100}
                             width={480}
                             height={460}
-                            // objectFit="cover"
+                            objectFit="cover"
                         />
                     </div>
                 </div>
@@ -58,9 +58,9 @@ export default function Main() {
                                 marginRight: "1.2rem",
                             }}
                         >
-                            <Link href="/about" replace>
+                            {/* <Link href="/about" replace>
                                 <a>view more</a>
-                            </Link>
+                            </Link> */}
                         </div>
                         <div
                             style={{ textAlign: "right", marginTop: "-0.5rem" }}
