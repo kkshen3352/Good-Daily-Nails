@@ -69,8 +69,8 @@ export default function Nav() {
                         />
                     </a>
                 </Link>
-                <ScrollTop />
             </div>
+            <ScrollTop />
         </nav>
     );
 }

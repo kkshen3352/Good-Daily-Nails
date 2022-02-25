@@ -1,10 +1,7 @@
 .scrollTop {
     position: fixed;
     top: 612px;
-    right: 19px;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
+    right: 18px;
     animation: fadeIn 0.3s;
     transition: opacity 0.4s;
 }
