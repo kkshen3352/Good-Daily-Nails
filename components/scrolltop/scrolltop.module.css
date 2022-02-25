@@ -1,9 +1,9 @@
 .scrollTop {
     position: fixed;
-    top: 612px;
+    top: 614px;
     right: 18px;
-    animation: fadeIn 0.3s;
-    transition: opacity 0.4s;
+    z-index: 9;
+    transition: 0.05s;
 }
 
 .scrollTop:hover {
@@ -12,5 +12,14 @@
 }
 
 .scrollTophidden {
+    right: -20px;
+    transition: 0.05s;
     visibility: hidden;
+}
+
+@media screen and (max-width: 470px) {
+    .scrollTop {
+        transform: 5s;
+        top: 93%;
+    }
 }
