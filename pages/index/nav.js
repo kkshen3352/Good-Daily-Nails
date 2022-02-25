@@ -4,6 +4,7 @@ import styles from "/styles/nav.module.css";
 import navHead from "/JSON/navHead.json";
 import LinkConfig from "/JSON/index/link_config.json";
 import Menu from "/components/curtain_menu";
+import ScrollTop from "../../components/scrolltop/scrolltop";
 
 export default function Nav() {
     const linkdata = LinkConfig;
@@ -13,8 +14,12 @@ export default function Nav() {
             {/* 卡位用 */}
             <div className={styles.nav}>
                 <Link href="/" replace className={styles.navicon}>
-                    <img src="/images/LOGO.jpg" alt="" width={70} height={70} 
-                    style={{marginLeft:"0.5rem"}}
+                    <img
+                        src="/images/LOGO.jpg"
+                        alt=""
+                        width={70}
+                        height={70}
+                        style={{ marginLeft: "0.5rem" }}
                     />
                     {/* <a className={styles.nav}>女子の日常</a> */}
                 </Link>
@@ -24,12 +29,7 @@ export default function Nav() {
                     <ul className={styles.flex}>
                         <li>
                             {navHead.map(({ name, link }, i) => (
-                                <Link
-                                    href={link}
-                                    
-                                    replace
-                                    key={i}
-                                >
+                                <Link href={link} replace key={i}>
                                     <a className={styles.navrwd}>{name}</a>
                                 </Link>
                             ))}
@@ -69,6 +69,7 @@ export default function Nav() {
                         />
                     </a>
                 </Link>
+                <ScrollTop />
             </div>
         </nav>
     );

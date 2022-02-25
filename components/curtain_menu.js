@@ -4,20 +4,11 @@ import Image from "next/image";
 import styles from "/components/menu.module.css";
 import NavMenu from "/JSON/navHead.json";
 import LinkConfig from "/JSON/index/link_config.json";
+import ScrollTop from "./scrolltop/scrolltop";
 
 export default function CurtainMenu() {
     const linkdata = LinkConfig;
-    // const openNav = () => {
-    //     document.getElementById("ChangeMenu").className ="open";
-    //     // ele.classList.add('open')
-    //     console.log('open');
-    // };
 
-    // const closeNav = () => {
-    //     document.getElementById("ChangeMenu").className="cloes" ;
-
-    //     console.log("ele");
-    // };
     const [open, setOpen] = useState(false);
     const container = useRef(null);
     const handleClickOutside = (event) => {
@@ -110,8 +101,10 @@ export default function CurtainMenu() {
                                 </a>
                             </Link>
                         </div>
+                        
                     </ul>
                 </div>
+                
                 {/* {open && (
                     <div className={styles.dropdown_wrapper}>
                         <ul className={styles.dropdown_menu}>
