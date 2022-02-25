@@ -3,8 +3,8 @@ import Image from "next/image";
 import styles from "/styles/nav.module.css";
 import navHead from "/JSON/navHead.json";
 import LinkConfig from "/JSON/index/link_config.json";
-import Menu from "/components/curtain_menu";
-import ScrollTop from "../../components/scrolltop/scrolltop";
+import Menu from "/components/menu/curtain_menu";
+import ScrollTop from "/components/scrolltop/scrolltop";
 
 export default function Nav() {
     const linkdata = LinkConfig;
