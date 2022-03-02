@@ -23,7 +23,6 @@ export default function Main() {
                         <Image
                             src="/images/nails_index.jpg"
                             alt="Good Day Nails"
-                            // max-width={100}
                             width={480}
                             height={460}
                             objectFit="cover"
@@ -32,10 +31,7 @@ export default function Main() {
                 </div>
 
                 {/* 關於我 */}
-                <div
-                    className={styles.flex}
-                    // style={{ margin: "3rem auto 2rem", padding: "3rem" }}
-                >
+                <div className={styles.flex}>
                     <div className={styles.aboutimage}>
                         <Image
                             src="/images/DSC_3087.jpg"
