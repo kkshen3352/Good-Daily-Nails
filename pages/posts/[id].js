@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
 import Head from 'next/head'
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import Date from "../../components/date";
+// import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 
 export default function Post({ postData }) {
@@ -14,7 +14,6 @@ export default function Post({ postData }) {
                 <h1 className={utilStyles.headingXl}>{postData.title}</h1>
                 <div className={utilStyles.lightText}>
                     {/* <Date dateString={postData.date} /> */}
-                    {/* 顯示日期 */}
                 </div>
                 <div
                     dangerouslySetInnerHTML={{ __html: postData.contentHtml }}

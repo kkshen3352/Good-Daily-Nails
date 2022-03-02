@@ -58,9 +58,9 @@ export default function Main() {
                                 marginRight: "1.2rem",
                             }}
                         >
-                            {/* <Link href="/about" replace>
+                            <Link href="/about" alt="view more" replace>
                                 <a>view more</a>
-                            </Link> */}
+                            </Link>
                         </div>
                         <div
                             style={{ textAlign: "right", marginTop: "-0.5rem" }}

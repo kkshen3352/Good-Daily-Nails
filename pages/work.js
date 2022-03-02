@@ -17,13 +17,10 @@ export default function work({ allPostsData }) {
                 <section>
                     <main>
                         <div className={styles.Skillsbox}>
-                            {allPostsData.map(({ id, title, name }, i) => (
-                                <div
-                                className={styles.Toptext}
-                                    key={i}
-                                >
+                            {allPostsData.map(({ id, title, name,tag }, i) => (
+                                <div className={styles.Toptext} key={i}>
                                     <h1
-                                    className={styles.texthidden}
+                                        className={styles.texthidden}
                                         id={title}
                                         // 修正跑版
                                     >
@@ -36,8 +33,8 @@ export default function work({ allPostsData }) {
                                                 marginLeft: "1rem",
                                             }}
                                         >
-                                            {name}
-                                            {title}
+                                            {name}&ensp;—
+                                            {title}—
                                         </h2>
                                     </div>
                                     <div className={styles.Work_card___LpL1}>
@@ -52,13 +49,8 @@ export default function work({ allPostsData }) {
                                         />
                                         <Link href={`/posts/${id}`}>
                                             <a className={styles.workinfo}>
-                                                <h3
-                                                    // style={{
-                                                    //     marginTop: "160px",
-                                                    // }}
-                                                >
-                                                    {name}
-                                                    {title}
+                                                <h3>
+                                                    {tag}
                                                 </h3>
                                             </a>
                                         </Link>

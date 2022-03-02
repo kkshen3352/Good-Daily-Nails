@@ -2,10 +2,10 @@ import Link from "next/link";
 import styles from "/styles/aection.module.css";
 import Navhead from "/JSON/navHead.json";
 
-export default function Contact(){
+export default function Contact() {
     return (
         <>
-        <section className={styles.backcontact}>
+            <section className={styles.backcontact}>
                 <div
                     style={{
                         textAlign: "center",
@@ -28,6 +28,5 @@ export default function Contact(){
                 </div>
             </section>
         </>
-    )
-
+    );
 }

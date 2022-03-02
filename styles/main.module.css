@@ -62,10 +62,15 @@
 .aboutmain h1 {
     text-align: left;
 }
+
 .abouttext {
     width: 400px;
     height: auto;
     word-wrap: break-word;
+}
+
+.aboutmain a:hover {
+    color: aliceblue;
 }
 
 @media screen and (max-width: 960px) {

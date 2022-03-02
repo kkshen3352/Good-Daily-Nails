@@ -13,18 +13,21 @@ export default function Nav() {
             <p style={{ height: "80px" }}></p>
             {/* 卡位用 */}
             <div className={styles.nav}>
-                <Link href="/" replace className={styles.navicon}>
-                    <img
-                        src="/images/LOGO.jpg"
-                        alt=""
-                        width={70}
-                        height={70}
-                        style={{ marginLeft: "0.5rem" }}
-                    />
-                    {/* <a className={styles.nav}>女子の日常</a> */}
+                <Link href="/" replace>
+                    <a>
+                        <img
+                            src="/images/LOGO.jpg"
+                            alt="女子の日常LOGO"
+                            width={70}
+                            height={70}
+                            style={{
+                                width: "70px",
+                                marginLeft: "0.5rem",
+                            }}
+                        />
+                    </a>
                 </Link>
                 <div className={styles.navbox}></div>
-                {/* 卡位用 */}
                 <div className={styles.navp}>
                     <ul className={styles.flex}>
                         <li>
