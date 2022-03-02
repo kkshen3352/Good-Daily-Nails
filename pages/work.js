@@ -17,7 +17,7 @@ export default function work({ allPostsData }) {
                 <section>
                     <main>
                         <div className={styles.Skillsbox}>
-                            {allPostsData.map(({ id, title, name,tag }, i) => (
+                            {allPostsData.map(({ id, title, name, tag }, i) => (
                                 <div className={styles.Toptext} key={i}>
                                     <h1
                                         className={styles.texthidden}
@@ -49,9 +49,7 @@ export default function work({ allPostsData }) {
                                         />
                                         <Link href={`/posts/${id}`}>
                                             <a className={styles.workinfo}>
-                                                <h3>
-                                                    {tag}
-                                                </h3>
+                                                <h3>{tag}</h3>
                                             </a>
                                         </Link>
                                     </div>

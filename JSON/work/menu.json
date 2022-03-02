@@ -1,13 +1,13 @@
 [
     { "text": "全部", "more": "/work", "moreposts": "/work" },
-    { "text": "教學", "more": "#teaching", "moreposts": "/work#teaching" },
-    { "text": "造型", "more": "#modeling", "moreposts": "/work/#modeling" },
+    { "text": "教學", "more": "#Teaching", "moreposts": "/work#teaching" },
+    { "text": "造型", "more": "#Design", "moreposts": "/work/#design" },
     {
         "text": "保養",
-        "more": "#maintainance",
+        "more": "#Maintainance",
         "moreposts": "/work/#maintainance"
     },
-    { "text": "凝膠", "more": "#gel", "moreposts": "/work/#gel" },
-    { "text": "睫毛", "more": "#eyelash", "moreposts": "/work/#eyelash" },
-    { "text": "卸甲", "more": "#disarm", "moreposts": "/work/#disarm" }
+    { "text": "凝膠", "more": "#Gel", "moreposts": "/work/#gel" },
+    { "text": "睫毛", "more": "#Eyelash", "moreposts": "/work/#eyelash" },
+    { "text": "卸甲", "more": "#Disarm", "moreposts": "/work/#disarm" }
 ]

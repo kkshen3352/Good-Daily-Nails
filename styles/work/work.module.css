@@ -216,3 +216,9 @@
         width: 360px;
     }
 }
+
+@media screen and (max-width: 393px) {
+    .workinfo h3 {
+        margin-top: 90px;
+    }
+}
