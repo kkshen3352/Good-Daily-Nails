@@ -77,6 +77,47 @@
     cursor: pointer;
 }
 
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 0 0 2px;
+    position: relative;
+}
+
+.bar {
+    width: 36px;
+    height: 6px;
+    background: #333;
+    margin: 6px 0;
+    border-radius: 2px;
+    opacity: 1;
+}
+.activebar1 {
+    width: 36px;
+    height: 6px;
+    background: #333;
+    transition: 0.5s;
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.activebar2 {
+    width: 36px;
+    height: 6px;
+    background: #333;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.activebar3 {
+    width: 36px;
+    height: 6px;
+    background: #333;
+    transition: 0.5s;
+    -webkit-transform: rotate(45deg) translate(-2px, -2px);
+    transform: rotate(45deg) translate(-2px, -2px);
+}
+
 @media screen and (max-width: 760px) {
     .container {
         display: block;

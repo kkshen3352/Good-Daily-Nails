@@ -27,14 +27,30 @@ export default function CurtainMenu() {
     return (
         <>
             <div className={styles.container} ref={container}>
-                <button
+                {/* <button
                     type="button"
                     className={styles.button}
                     onClick={() => setOpen(!open)}
                 >
                     ☰
-                </button>
-
+                </button> */}
+                <div className={styles.menu} onClick={() => setOpen(!open)}>
+                    <div
+                        className={
+                            open ? `${styles.activebar1}` : `${styles.bar}`
+                        }
+                    ></div>
+                    <div
+                        className={
+                            open ? `${styles.activebar2}` : `${styles.bar}`
+                        }
+                    ></div>
+                    <div
+                        className={
+                            open ? `${styles.activebar3}` : `${styles.bar}`
+                        }
+                    ></div>
+                </div>
                 <div className={styles.dropdown_wrapper}>
                     <ul
                         className={
@@ -100,7 +116,6 @@ export default function CurtainMenu() {
                                 </a>
                             </Link>
                         </div>
-                        
                     </ul>
                 </div>
             </div>
