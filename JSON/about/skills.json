@@ -1,14 +1,17 @@
 [
     {
         "skills": "美甲設計",
-        "main": "美甲設計11111111111111111111111"
+        "main": "單色彩繪/彩繪設計",
+        "imgsrc": "/images/index_nails.jpg"
     },
     {
         "skills": "腳足保養",
-        "main": "腳足保養11111111111111111111111"
+        "main": "去角質/指甲刀剪短/磨刀修整",
+        "imgsrc": "/images/legs.jpg"
     },
     {
         "skills": "日系睫毛",
-        "main": "日系睫毛11111111111111111111111"
+        "main": "日系接睫",
+        "imgsrc": "/images/about_me.jpg"
     }
 ]

@@ -157,3 +157,10 @@
         /* text-shadow: 2px 2px #e4cdbb; */
     }
 }
+@media screen and (max-width: 490px) {
+    .flex h1 {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -21,7 +21,7 @@ export default function Main() {
                     </h1>
                     <div className={styles.mainimage}>
                         <Image
-                            src="/images/nails_index.jpg"
+                            src="/images/index.jpg"
                             alt="Good Day Nails"
                             width={480}
                             height={460}
@@ -34,8 +34,8 @@ export default function Main() {
                 <div className={styles.flex}>
                     <div className={styles.aboutimage}>
                         <Image
-                            src="/images/DSC_3087.jpg"
-                            alt="Girl"
+                            src="/images/about_me.jpg"
+                            alt="about me"
                             max-width={100}
                             width={440}
                             height={440}

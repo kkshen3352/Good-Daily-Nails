@@ -29,9 +29,10 @@
     border-radius: 9999px;
 }
 
-.colorInherit {
-    color: inherit;
-    margin: 1rem;
+.colorInherit:hover {
+    color: #e4cdbb;
+    text-shadow: 2px 2px black;
+    text-align: center;
 }
 
 .padding1px {

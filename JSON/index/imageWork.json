@@ -1,44 +1,38 @@
 [
     {
-        "text": "保養",
-        "text1": "maintainance",
+        "text": "教學",
+        "text1": "Teaching",
+        "imgsrc": "/images/IMG_1549.jpg",
+        "more": "教學teaching"
+    },
+    {
+        "text": "造型",
+        "text1": "Design",
         "imgsrc": "/images/DSC_9610.jpg",
-        "alt": "",
+        "more": "modeling"
+    },
+    {
+        "text": "保養",
+        "text1": "Maintainance",
+        "imgsrc": "/images/DSC_9610.jpg",
         "more": "maintainance"
     },
     {
         "text": "凝膠",
-        "text1": "gel",
-        "imgsrc": "/images/DSC_9610.jpg",
-        "alt": "",
+        "text1": "Gel",
+        "imgsrc": "/images/nails_index.jpg",
         "more": "gel"
     },
     {
-        "text": "卸甲",
-        "text1": "disarm",
-        "imgsrc": "/images/DSC_9610.jpg",
-        "alt": "",
-        "more": "disarm"
-    },
-    {
-        "text": "造型",
-        "text1": "customized",
-        "imgsrc": "/images/DSC_9610.jpg",
-        "alt": "",
-        "more": "modeling"
-    },
-    {
-        "text": "教學",
-        "text1": "teaching",
-        "imgsrc": "/images/DSC_9610.jpg",
-        "alt": "",
-        "more": "教學teaching"
-    },
-    {
         "text": "睫毛",
-        "text1": "eyelash",
+        "text1": "Eyelash",
         "imgsrc": "/images/DSC_9610.jpg",
-        "alt": "",
-        "more": "睫毛eyelash"
+        "more": "eyelash"
+    },
+    {
+        "text": "卸甲",
+        "text1": "Disarm",
+        "imgsrc": "/images/DSC_9610.jpg",
+        "more": "disarm"
     }
 ]

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Menu from "/JSON/work/menu.json";
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
+import Skill from "/JSON/index/imageWork.json";
 
 export default function work({ allPostsData }) {
     return (
@@ -17,44 +18,55 @@ export default function work({ allPostsData }) {
                 <section>
                     <main>
                         <div className={styles.Skillsbox}>
-                            {allPostsData.map(({ id, title, name, tag }, i) => (
-                                <div className={styles.Toptext} key={i}>
-                                    <h1
-                                        className={styles.texthidden}
-                                        id={title}
-                                        // 修正跑版
-                                    >
-                                        {title}
-                                    </h1>
-                                    <div className={styles.worktitlecenter}>
-                                        <p className={styles.boxbackground}></p>
-                                        <h2
-                                            style={{
-                                                marginLeft: "1rem",
-                                            }}
+                            {allPostsData.map(
+                                ({ id, title, name, tag, imgsrc }, i) => (
+                                    <div className={styles.Toptext} key={i}>
+                                        <h1
+                                            className={styles.texthidden}
+                                            id={title}
+                                            // 修正跑版
                                         >
-                                            {name}&ensp;—
-                                            {title}—
-                                        </h2>
+                                            {title}
+                                        </h1>
+                                        <div className={styles.worktitlecenter}>
+                                            <p
+                                                className={styles.boxbackground}
+                                            ></p>
+                                            <h2
+                                                style={{
+                                                    marginLeft: "1rem",
+                                                }}
+                                            >
+                                                {name}&ensp;—
+                                                {title}—
+                                            </h2>
+                                        </div>
+                                        <div
+                                            className={styles.Work_card___LpL1}
+                                        >
+                                            <div
+                                                key={i}
+                                                className={
+                                                    styles.Work_card___LpL1Image
+                                                }
+                                            >
+                                                <Image
+                                                    src={imgsrc}
+                                                    alt={""}
+                                                    width={600}
+                                                    height={400}
+                                                    objectFit={"cover"}
+                                                />
+                                            </div>
+                                            <Link href={`/posts/${id}`}>
+                                                <a className={styles.workinfo}>
+                                                    <h3>{tag}</h3>
+                                                </a>
+                                            </Link>
+                                        </div>
                                     </div>
-                                    <div className={styles.Work_card___LpL1}>
-                                        <Image
-                                            className={
-                                                styles.Work_card___LpL1Image
-                                            }
-                                            src="/images/DSC_9610.jpg"
-                                            alt=""
-                                            width={600}
-                                            height={400}
-                                        />
-                                        <Link href={`/posts/${id}`}>
-                                            <a className={styles.workinfo}>
-                                                <h3>{tag}</h3>
-                                            </a>
-                                        </Link>
-                                    </div>
-                                </div>
-                            ))}
+                                )
+                            )}
                         </div>
                     </main>
                 </section>

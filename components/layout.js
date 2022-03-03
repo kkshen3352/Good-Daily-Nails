@@ -6,6 +6,7 @@ import Nav from "../pages/index/nav";
 import Foot from "../pages/index/foot";
 import Title from "/JSON/navHead.json";
 import Menu from "/JSON/work/menu.json";
+import Image from "next/image";
 
 export const siteTitle = "女子の日常-工作項目";
 
@@ -25,10 +26,7 @@ export default function Layout({ children, work }) {
                     ) : (
                         <>
                             <Link href="/work">
-                                <a
-                                    className={utilStyles.colorInherit}
-                                    style={{ textAlign: "center" }}
-                                >
+                                <a className={utilStyles.colorInherit}>
                                     <h1>{Title[1].name}</h1>
                                     <p>{Title[1].subtitle}</p>
                                 </a>
@@ -37,9 +35,7 @@ export default function Layout({ children, work }) {
                     )}
                 </header>
                 <section>
-                    <div 
-                    className={styles.container}
-                    >
+                    <div className={styles.container}>
                         <Head>
                             <link rel="icon" href="/images/LOGO.jpg" />
                             <meta
@@ -113,9 +109,19 @@ export default function Layout({ children, work }) {
                             {children}
                         </main>
                         {!work && (
-                            <div className={styles.backToHome}>
+                            <div>
                                 <Link href="/work">
-                                    <a>← Back to work</a>
+                                    <a className={styles.backtext}>
+                                        <p>Back</p>
+                                        <Image
+                                            className={styles.backToHome}
+                                            src="/images/arrow.png"
+                                            alt="arrow"
+                                            max-width={100}
+                                            width={100}
+                                            height={5}
+                                        />
+                                    </a>
                                 </Link>
                             </div>
                         )}

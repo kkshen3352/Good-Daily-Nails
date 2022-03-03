@@ -11,8 +11,20 @@
     margin-top: -10px;
 }
 
+.backtext p {
+    margin-left: 30px;
+    margin-bottom: -15px;
+    z-index: 1;
+}
+
 .backToHome {
+    z-index: 0;
     margin: 3rem 0 0;
+    -webkit-transform: rotate(180deg) translate(-2px, -2px);
+}
+.backtext:hover {
+    color: #e4cdbb;
+    text-shadow: 1px 1px black;
 }
 
 .boxbackground {

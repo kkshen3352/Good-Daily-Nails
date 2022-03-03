@@ -29,6 +29,7 @@ export default function aection() {
                                     // max-width={100}
                                     width={360}
                                     height={223}
+                                    objectFit={"cover"}
                                 />
                                 <Link href={`/posts/${more}`}>
                                     <a className={styles.info}>

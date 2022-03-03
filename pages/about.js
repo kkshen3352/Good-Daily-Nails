@@ -8,7 +8,7 @@ import Experience from "/JSON/about/experience.json";
 import Skills from "/JSON/about/skills.json";
 import AboutMe from "/JSON/about/aboutme.json";
 import Contact from "./index/contact";
-import Navtitle from "/JSON/navHead.json"
+import Navtitle from "/JSON/navHead.json";
 
 export default function About() {
     const data = Experience;
@@ -17,10 +17,7 @@ export default function About() {
             <Nav />
             <Head>
                 <title>女子の日常-關於我</title>
-                <meta
-                    name="description"
-                    content="女子の日常-關於我"
-                />
+                <meta name="description" content="女子の日常-關於我" />
                 <link rel="icon" href="/images/LOGO.jpg" />
             </Head>
 
@@ -56,15 +53,15 @@ export default function About() {
                             <h2>產品 — 製品 —</h2>
                         </div>
                         <div className={styles.skillbox}>
-                            {Skills.map(({ skills, main }, i) => (
+                            {Skills.map(({ skills, main,imgsrc }, i) => (
                                 <div
                                     className={styles.Home_card___LpL1}
                                     key={i}
                                 >
                                     <div>
                                         <Image
-                                            src="/images/DSC_3087.jpg"
-                                            alt=""
+                                            src={imgsrc}
+                                            alt={skills}
                                             width={350}
                                             height={250}
                                             objectFit="cover"
@@ -76,7 +73,14 @@ export default function About() {
                                         >
                                             {skills}
                                         </h4>
-                                        <p style={{ margin: "0" }}>{main}</p>
+                                        <p
+                                            style={{
+                                                margin: "0",
+                                                textAlign: "center",
+                                            }}
+                                        >
+                                            {main}
+                                        </p>
                                     </div>
                                 </div>
                             ))}
