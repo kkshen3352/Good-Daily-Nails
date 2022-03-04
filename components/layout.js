@@ -7,10 +7,33 @@ import Foot from "../pages/index/foot";
 import Title from "/JSON/navHead.json";
 import Menu from "/JSON/work/menu.json";
 import Image from "next/image";
+import React, { useState, useEffect } from "react";
 
 export const siteTitle = "女子の日常-工作項目";
 
 export default function Layout({ children, work }) {
+    const [out, setOut] = useState(false);
+
+    const checkScrollTop = () => {
+        if (!out && window.pageYOffset > 1) {
+            setOut(true);
+        } else if (out && window.pageYOffset <= 0) {
+            setOut(false);
+        }
+    };
+
+    const scrollOut = () => {
+        document.documentElement.style.scrollBehavior = "smooth";
+    };
+
+    useEffect(() => {
+        document.addEventListener("scroll", checkScrollTop);
+        return () => {
+            // clean up
+            document.removeEventListener("scroll", checkScrollTop);
+        };
+    });
+
     return (
         <>
             <Nav />
@@ -64,6 +87,9 @@ export default function Layout({ children, work }) {
                                                 <ul
                                                     key={i}
                                                     style={{ margin: "0" }}
+                                                    onClick={() =>
+                                                        scrollOut(!out)
+                                                    }
                                                 >
                                                     <Link href={more}>
                                                         <a

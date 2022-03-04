@@ -5,11 +5,35 @@ import navHead from "/JSON/navHead.json";
 import LinkConfig from "/JSON/index/link_config.json";
 import Menu from "/components/menu/curtain_menu";
 import ScrollTop from "/components/scrolltop/scrolltop";
+import React, { useState, useEffect } from "react";
 
 export default function Nav() {
     const linkdata = LinkConfig;
+
+    const [restyle, setRestyle] = useState(false);
+
+    const checkScroll = () => {
+        if (!restyle && window.pageYOffset > 1) {
+            setRestyle(true);
+        } else if (restyle && window.pageYOffset <= 0) {
+            setRestyle(false);
+        }
+    };
+
+    const reScroll = () => {
+        document.documentElement.style.scrollBehavior = "auto";
+    };
+
+    useEffect(() => {
+        document.addEventListener("scroll", checkScroll);
+        return () => {
+            // clean up
+            document.removeEventListener("scroll", checkScroll);
+        };
+    });
+
     return (
-        <nav className={styles.wrapper}>
+        <nav className={styles.wrapper} onClick={() => reScroll(!restyle)}>
             <p style={{ height: "80px" }}></p>
             {/* 卡位用 */}
             <div className={styles.nav}>
