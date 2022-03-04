@@ -14,12 +14,13 @@
 .scrollTophidden {
     position: fixed;
     top: 614px;
-    right: -20px;
+    right: -35px;
     transition: 0.05s;
-    visibility: hidden;
+    /* display: none; */
+    /* visibility: hidden; */
 }
 
-@media screen and (max-width: 470px) {
+/* @media screen and (max-width: 470px) {
     .scrollTop {
         transform: 5s;
         top: 93%;
@@ -28,4 +29,4 @@
         position: fixed;
         top: 93%;
     }
-}
+} */
