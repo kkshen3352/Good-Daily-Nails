@@ -5,8 +5,8 @@
         "subtitle": "關於我"
     },
     {
-        "name": "Menu",
-        "link": "/menu",
+        "name": "Work",
+        "link": "/work",
         "subtitle": "項目"
     },
     {
@@ -15,9 +15,9 @@
         "subtitle": "預約須知"
     },
     {
-        "name": "Price",
-        "link": "/price",
-        "subtitle": "價目表"
+        "name": "Menu",
+        "link": "/menu",
+        "subtitle": "菜單"
     },
     {
         "name": "Contact",
