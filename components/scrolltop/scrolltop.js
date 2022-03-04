@@ -5,9 +5,9 @@ export default function ScrollTop() {
     const [showScroll, setShowScroll] = useState(false);
 
     const checkScrollTop = () => {
-        if (!showScroll && window.pageYOffset > 400) {
+        if (!showScroll && window.pageYOffset > 18) {
             setShowScroll(true);
-        } else if (showScroll && window.pageYOffset <= 400) {
+        } else if (showScroll && window.pageYOffset <= 18) {
             setShowScroll(false);
         }
     };
@@ -19,6 +19,7 @@ export default function ScrollTop() {
     useEffect(() => {
         document.addEventListener("scroll", checkScrollTop);
         document.documentElement.style.scrollBehavior = "smooth";
+        
         return () => {
             // clean up
             document.removeEventListener("scroll", checkScrollTop);
