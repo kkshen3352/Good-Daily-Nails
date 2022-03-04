@@ -18,9 +18,11 @@ export default function ScrollTop() {
 
     useEffect(() => {
         document.addEventListener("scroll", checkScrollTop);
+        document.documentElement.style.scrollBehavior = "smooth";
         return () => {
             // clean up
             document.removeEventListener("scroll", checkScrollTop);
+            document.documentElement.style.scrollBehavior = "auto";
         };
     });
 
