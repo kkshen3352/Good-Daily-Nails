@@ -4,22 +4,25 @@
     height: auto;
     margin: 0 auto;
     margin-top: -12px;
-    background: #e4cdbb;
+    /* background: #e4cdbb; */
 }
 
 .flex {
     display: flex;
-    flex-direction: row;
+    margin: 0 auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     align-items: center;
 }
 
-.flex p {
-    color: red;
-    margin-bottom: 2px;
+.flex2 {
+    display: flex;
+    flex-direction: row;
 }
 
-.resevertitle {
-    margin: 1rem;
+.reseverbox {
+    background: #e4cdbb;
     padding: 1rem;
 }
 

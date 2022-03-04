@@ -45,10 +45,10 @@ export default function aection() {
                     </div>
                 </div>
                 <div>
-                    <Link href="/work" replace>
+                    <Link href={Navhead[1].link} replace>
                         <a>
                             <div className={styles.workbutton}>
-                                {Navhead[4].link}
+                                {Navhead[5].link}
                             </div>
                         </a>
                     </Link>

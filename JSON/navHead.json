@@ -5,14 +5,19 @@
         "subtitle": "關於我"
     },
     {
-        "name": "Work",
-        "link": "/work",
-        "subtitle": "工作項目"
+        "name": "Menu",
+        "link": "/menu",
+        "subtitle": "項目"
     },
     {
         "name": "Reserve",
         "link": "/reserve",
         "subtitle": "預約須知"
+    },
+    {
+        "name": "Price",
+        "link": "/price",
+        "subtitle": "價目表"
     },
     {
         "name": "Contact",

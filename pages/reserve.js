@@ -22,14 +22,17 @@ export default function Reserve() {
             <div className={styles.wrapper}>
                 <div className={styles.resevertitle}>
                     <div className={styles.flex}>
-                        <h1>{titledata.title}</h1>
-                        <p>&ensp;&ensp;{titledata.subtitle}</p>
+                        <h1>{titledata.head}</h1>
+                        <h4 className={styles.flex}>
+                            {titledata.title}
+                            <p style={{color:"red"}}>{titledata.subtitle}</p>
+                        </h4>
                     </div>
                 </div>
                 <div className={styles.reseverbox}>
                     {maindata.map(({ main }, i) => (
                         <ul key={i}>
-                            <li className={styles.flex}>
+                            <li className={styles.flex2}>
                                 ※&ensp;<p>{main}</p>
                             </li>
                         </ul>

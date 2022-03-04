@@ -7,9 +7,9 @@
     },
     {
         "text": "產品",
-        "text1": "Design",
+        "text1": "product",
         "imgsrc": "/images/DSC_9610.jpg",
-        "more": "modeling"
+        "more": "product"
     },
     {
         "text": "日式保養",
@@ -24,7 +24,7 @@
         "more": "gel"
     },
     {
-        "text": "接睫",
+        "text": "嫁接睫毛",
         "text1": "Eyelash",
         "imgsrc": "/images/DSC_9610.jpg",
         "more": "eyelash"

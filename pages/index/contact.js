@@ -13,15 +13,15 @@ export default function Contact() {
                         padding: "2rem",
                     }}
                 >
-                    <h1>{Navhead[3].name}</h1>
-                    <p>{Navhead[3].suntitle}</p>
+                    <h1>{Navhead[4].name}</h1>
+                    <p>{Navhead[4].suntitle}</p>
                     <br />
-                    <p>{Navhead[3].text}</p>
+                    <p>{Navhead[4].text}</p>
 
                     <Link href="/contact">
                         <a>
                             <div className={styles.workbutton}>
-                                {Navhead[3].button}
+                                {Navhead[4].button}
                             </div>
                         </a>
                     </Link>

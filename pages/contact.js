@@ -18,8 +18,8 @@ export default function About() {
             </Head>
             <Nav />
             <div className={styles.wrapper}>
-                <h1 style={{ textAlign: "center" }}>{Title[3].name}</h1>
-                <p style={{ textAlign: "center" }}>{Title[3].subtitle}</p>
+                <h1 style={{ textAlign: "center" }}>{Title[4].name}</h1>
+                <p style={{ textAlign: "center" }}>{Title[4].subtitle}</p>
                 <div className={styles.flex}>
                     <iframe
                         className={styles.contactiframe}
