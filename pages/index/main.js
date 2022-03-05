@@ -19,14 +19,24 @@ export default function Main() {
                             {IndexMain.Main.subtext}
                         </p>
                     </h1>
-                    <div className={styles.mainimage}>
-                        <Image
+                    <div 
+                    className={styles.mainimage}
+                    >
+                        <div style={{ margin: "0 auto", marginTop: "-3.2rem" }}>
+                            <iframe
+                                width="320"
+                                height="390"
+                                src="https://www.instagram.com/p/CZY4XDtPW_3/embed"
+                                frameBorder="0"
+                            ></iframe>
+                        </div>
+                        {/* <Image
                             src="/images/index.jpg"
                             alt="Good Day Nails"
                             width={480}
                             height={460}
                             objectFit="cover"
-                        />
+                        /> */}
                     </div>
                 </div>
 

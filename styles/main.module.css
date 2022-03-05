@@ -28,17 +28,21 @@
 }
 .maintitle {
     font-size: 48px;
-    padding-left: 2.5rem;
-    padding-top: 10%;
-    margin: 1.5rem;
-    text-shadow: 2px 2px #e4cdbb;
+    /* padding-left: 2.5rem; */
+    /* padding-top: 10%; */
+    margin: 4rem 5rem 0 -5rem;
+    /* text-shadow: 2px 2px #e4cdbb; */
 }
 
 .mainimage {
-    max-width: 480px;
+    /* max-width: 480px;
     width: 100%;
     margin: 1rem 0 1rem 1rem;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 1rem 1rem; */
+}
+
+.mainimage:hover {
+    opacity: 0.6;
 }
 
 .aboutimage {
@@ -80,14 +84,12 @@
         padding: 0;
     }
     .maintitle {
-        padding-top: 16%;
-        color: #e4cdbb;
-        text-shadow: 2px 2px black;
+        padding: 2rem 0 0 8rem;
     }
     .mainimage {
         position: absolute;
         top: 8%;
-        left: 30%;
+        right: 80px;
         z-index: -1;
     }
     .aboutimage {
@@ -115,10 +117,11 @@
 @media screen and (max-width: 768px) {
     .maintitle {
         font-size: 42px;
-        margin: 0 auto;
+        margin: 3rem auto 0 -3rem;
     }
     .mainimage {
-        left: 23%;
+        top: 100px;
+        /* left: 23%; */
     }
 }
 @media screen and (max-width: 520px) {
@@ -132,7 +135,7 @@
         margin: -24px auto;
         padding: 0;
         top: 15%;
-        left: 0;
+        left: 35px;
     }
     .aboutimage {
         width: 190px;
