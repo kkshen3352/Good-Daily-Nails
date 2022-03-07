@@ -78,6 +78,18 @@
         brightness(91%) contrast(94%);
 }
 
+@media screen and (max-width: 820px) {
+    .navbox {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navp {
+        max-width: 660px;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 760px) {
     .navrwd {
         display: none;
@@ -91,5 +103,10 @@
     }
     .globalnavitemsns a {
         display: none;
+    }
+}
+@media screen and (max-width: 393px) {
+    .navbox {
+        display: block;
     }
 }
