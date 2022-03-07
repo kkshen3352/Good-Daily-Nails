@@ -105,6 +105,12 @@
         display: none;
     }
 }
+@media screen and (max-width: 513px) {
+    .navbox {
+        display: block;
+        padding-left: 8rem;
+    }
+}
 @media screen and (max-width: 393px) {
     .navbox {
         display: block;
