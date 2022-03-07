@@ -1,7 +1,7 @@
 ---
-title: "Design"
+title: "Product"
 # date: "2020-01-04"
-name: "造型"
+name: "產品"
 tag: "彩繪設計/凝膠指甲"
 imgsrc: "/images/DSC_9610.jpg"
 ---

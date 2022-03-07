@@ -2,8 +2,30 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "/styles/main.module.css";
 import IndexMain from "/JSON/index/indexMain.json";
+import React, { useState, useEffect } from "react";
 
 export default function Main() {
+    const [restyle, setRestyle] = useState(false);
+
+    const checkScroll = () => {
+        if (!restyle && window.pageYOffset > 1) {
+            setRestyle(true);
+        } else if (restyle && window.pageYOffset <= 0) {
+            setRestyle(false);
+        }
+    };
+
+    const reScroll = () => {
+        document.documentElement.style.scrollBehavior = "auto";
+    };
+
+    useEffect(() => {
+        document.addEventListener("scroll", checkScroll);
+        return () => {
+            // clean up
+            document.removeEventListener("scroll", checkScroll);
+        };
+    });
     return (
         <>
             <div className={styles.wrapper}>
@@ -53,6 +75,7 @@ export default function Main() {
                             {IndexMain.About.text}
                         </p>
                         <div
+                            onClick={() => reScroll(!restyle)}
                             style={{
                                 textAlign: "right",
                                 marginRight: "1.2rem",

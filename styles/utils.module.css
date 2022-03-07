@@ -52,3 +52,9 @@
 .lightText {
     color: #666;
 }
+
+@media screen and (max-width: 520px) {
+    .headingXl {
+        text-align: center;
+    }
+}

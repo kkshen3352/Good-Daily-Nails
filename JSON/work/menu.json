@@ -1,7 +1,7 @@
 [
     { "text": "全部", "more": "/work", "moreposts": "/work" },
     { "text": "教學", "more": "#Teaching", "moreposts": "/work#Teaching" },
-    { "text": "造型", "more": "#Design", "moreposts": "/work/#Design" },
+    { "text": "產品", "more": "#Product", "moreposts": "/work/#Product" },
     {
         "text": "保養",
         "more": "#Maintainance",
