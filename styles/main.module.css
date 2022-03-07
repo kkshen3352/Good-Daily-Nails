@@ -85,12 +85,13 @@
     }
     .maintitle {
         padding: 2rem 0 0 8rem;
+        max-width: 550px;
+        width: 100%;
     }
     .mainimage {
         position: absolute;
         top: 8%;
         right: 80px;
-        z-index: -1;
     }
     .aboutimage {
         position: relative;
@@ -118,10 +119,11 @@
     .maintitle {
         font-size: 42px;
         margin: 3rem auto 0 -3rem;
+        visibility: hidden;
     }
     .mainimage {
         top: 100px;
-        /* left: 23%; */
+        margin: 2rem 6rem;
     }
 }
 @media screen and (max-width: 520px) {
@@ -162,7 +164,6 @@
 }
 @media screen and (max-width: 490px) {
     .flex h1 {
-        visibility: hidden;
         margin: 0;
         padding: 0;
     }
