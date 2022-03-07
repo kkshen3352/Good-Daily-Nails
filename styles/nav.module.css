@@ -108,7 +108,7 @@
 @media screen and (max-width: 513px) {
     .navbox {
         display: block;
-        padding-left: 8rem;
+        padding-left: 6rem;
     }
 }
 @media screen and (max-width: 393px) {
